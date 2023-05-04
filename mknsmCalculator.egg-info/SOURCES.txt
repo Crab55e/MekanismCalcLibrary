@@ -1,0 +1,8 @@
+README.md
+setup.py
+mknsmCalculator/__init__.py
+mknsmCalculator/mknsmCalclator.py
+mknsmCalculator.egg-info/PKG-INFO
+mknsmCalculator.egg-info/SOURCES.txt
+mknsmCalculator.egg-info/dependency_links.txt
+mknsmCalculator.egg-info/top_level.txt
