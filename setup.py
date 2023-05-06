@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="mknsmCalculator",
-    version="0.1",
+    name="mknsmPy",
+    version="Beta-0.1",
     packages=find_packages()
 )
