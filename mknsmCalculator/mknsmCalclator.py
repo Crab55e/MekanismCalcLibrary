@@ -120,6 +120,111 @@ def mknsmCalc(name, quantity):
                         "精製グロウストーンインゴット": f"{quantity*9}個"
                     }
                     return result
+        case "発展制御回路":
+            match quantity:
+                case quantity if  quantity*2 >= 64:
+                    result = {
+                        "吹込合金": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                        "基本制御回路": f"{int(quantity/64)スタックと{quantity%64}個}"
+                    }
+                    return result
+                case _:
+                    result = {
+                        "吹込合金": f"{quantity*2}個",
+                        "基本制御回路": f"{quantity}個"
+                    }
+                    return result
+        case "精鋭制御回路": 
+            match quantity:
+                case quantity if quantity*2 >= 64:
+                    result = {
+                        "強化合金": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                        "発展制御回路": f"{int(quantity/64)}スタックと{quantity%64}個"
+                    }
+                    return result
+                case _:
+                    result = {
+                        "強化合金": f"{quantity*2}個",
+                        "発展制御回路": f"{quantity}個"
+                    }
+                    return result
+        case "究極制御回路":
+            match quantity:
+                case quantity if quantity*2 >=64:
+                    result = {
+                        "原子合金": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                        "精鋭制御回路": f"{int(quantity/64)}スタックと{quantity*2%64}個"
+                    }
+                    return result
+                case _:
+                    result = {
+                        "原子合金": f"{quantity*2}個",
+                        "精鋭制御回路": f"{quantity}個"
+                    }
+                    return result
+        case "電解コア":
+            match quantity:
+                case quantity if quantity*5 >=64:
+                    result = {
+                        "吹込合金": f"{int(quantity*5/64)}スタックと{quantity*5%64}個",
+                        "オスミウムの粉": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                        "金の粉": f"{int(quantity/64)}スタックと{quantity%64}個",
+                        "鉄の粉": f"{int(quantity/64)}スタックと{quantity%64}個"
+                    }
+                    return result
+                case _:
+                    result = {
+                        "吹込合金": f"{quantity*5}個",
+                        "オスミウムの粉": f"{quantity*2}個",
+                        "金の粉": f"{quantity}個",
+                        "鉄の粉": f"{quantity}個"
+                    }
+                    return result
+        case "テレポーテーションコア":
+            match quantity:
+                case quantity if quantity*4 >=64:
+                    result = {
+                        "ラピスラズリ": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                        "原子合金": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                        "金インゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                        "ダイヤモンド": f"{int(quantity/64)}スタックと{quantity%64}個"
+                    }
+                    return result
+                case _:
+                    result = {
+                        "ラピスラズリ": f"{quantity*4}個",
+                        "原子合金": f"{quantity*2}個",
+                        "金インゴット": f"{quantity*2}個",
+                        "ダイヤモンド": f"{quantity}個"
+                    }
+                    return result
+        case "HDPEシート":
+            match quantity:
+                case quantity*3 >= 64:
+                    result = {
+                        "HDPEペレット": f"{int(quantity*3/64)}スタックと{quantity*3%64}個",
+                        "注意": "濃縮室で濃縮した場合の数値です"
+                    }
+                    return result
+                case _:
+                    result = {
+                        "HDPEペレット": f"{quantity*3}個",
+                        "注意": "濃縮室で濃縮した場合の数値です"
+                    }
+                    return result
+        case "HDPEの棒":
+            match quantity:
+                case quantity if quantity*4 >= 64:
+                    result = {
+                        "HDPEペレット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個"
+                    }
+                    return result
+                case _:
+                    result = {
+                        "HDPEペレット": f"{quantity*4}個"
+                    }
+                    return result
         case _:
             return "有効な値を入力してください"
-print(mknsmCalc("塩ブロック", 20))
+
+
