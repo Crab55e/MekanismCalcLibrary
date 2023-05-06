@@ -1,1 +1,1 @@
-from mknsmCalclator.mknsmCalclator import *
+from mknsmCalculator.mknsmCalculator import *
