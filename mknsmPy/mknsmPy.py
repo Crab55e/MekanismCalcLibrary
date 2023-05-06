@@ -170,6 +170,15 @@ def Calc(name, quantity):
                 "HDPEペレット": f"{quantity*3}個",
                 "注意": "濃縮室で濃縮した場合の数値です"
             }
+    if name == "HDPEの棒":
+        if quantity*4 >= 64:
+            return {
+                "HDPEペレット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個"
+            }
+        else:
+            return {
+                "HDPEペレット": f"{quantity*4}個"
+            }
     else:
         return "有効な値を入力してください"
     
