@@ -179,6 +179,144 @@ def Calc(name, quantity):
             return {
                 "HDPEペレット": f"{quantity*4}個"
             }
+    if name == "プラ棒":
+        if quantity*2 >= 64:
+            return {
+                "HDPEの棒": f"{int(quantity*2/64)}スタックと{quantity*2%64}個"
+            }
+        else:
+            return {
+                "HDPEの棒": f"{quantity*2}個"
+            }
+    if name == "スキューバマスク":
+        if quantity*3 >= 64:
+            return {
+                "鋼鉄インゴット": f"{int(quantity*3/64)}スタックと{quantity*3%64}個",
+                "ガラス": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "基本制御回路": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "鋼鉄インゴット": f"{quantity*3}個",
+                "ガラス": f"{quantity*2}個",
+                "基本制御回路": f"{quantity}個"
+            }
+    if name == "潜水タンク":
+        if quantity*3 >= 64:
+            return {
+                "鋼鉄インゴット": f"{int(quantity*3/64)}スタックと{quantity*3%64}個",
+                "吹込合金": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "基本制御回路": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "化学タンク(種類不問)": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "鋼鉄インゴット": f"{quantity*3}個",
+                "吹込合金": f"{quantity*2}個",
+                "基本制御回路": f"{quantity}個",
+                "化学タンク(種類不問)": f"{quantity}個"
+            }
+    if name == "ジェットパック":
+        if quantity*3 >= 64:
+            return {
+                "錫インゴット": f"{int(quantity*3/64)}スタックと{quantity*3%64}個",
+                "鋼鉄インゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "基本制御回路": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "化学タンク": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "錫インゴット": f"{quantity*3}個",
+                "鋼鉄インゴット": f"{quantity*2}個",
+                "基本制御回路": f"{quantity}個",
+                "化学タンク": f"{quantity}個"
+            }
+    if name == "装甲ジェットパック":
+        if quantity*2 >= 64:
+            return {
+                "ダイヤモンドの粉": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "青銅インゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "鋼鉄ブロック": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "ジェットパック": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "ダイヤモンドの粉": f"{quantity*2}個",
+                "青銅インゴット": f"{quantity*2}個",
+                "鋼鉄ブロック": f"{quantity}個",
+                "ジェットパック": f"{quantity}個"
+            }
+    if name == "フリーランナー":
+        if quantity*2 >= 64:
+            return {
+                "基本制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "吹込合金": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "エネルギータブレット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個"
+            }
+        else:
+            return {
+                "基本制御回路": f"{quantity*2}個",
+                "吹込合金": f"{quantity*2}個",
+                "エネルギータブレット": f"{quantity*2}個"
+            }
+    if name == "原子分解機":
+        if quantity*4 >= 64:
+            return {
+                "吹込合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "原子合金": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "精製黒曜石インゴット": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "エネルギータブレット": f"{int(quantity/64)}スタックと{quantity%}個",
+            }
+        else:
+            return {
+                "吹込合金": f"{quantity*4}個",
+                "原子合金": f"{quantity}個",
+                "精製黒曜石インゴット": f"{quantity}個",
+                "エネルギータブレット": f"{quantity}個"
+            }
+    if name == "エレクトリックボウ":
+        if quantity*3 >= 64:
+            return{
+                "糸": f"{int(quantity*3/64)}スタックと{quantity*3%64}個",
+                "吹込合金": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "エネルギータブレット": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "糸": f"{quantity*3}個",
+                "吹込合金": f"{quantity*2}個",
+                "エネルギータブレット": f"{quantity}個"
+            }
+    if name == "火炎放射器":
+        if quantity*4 >= 64:
+            return {
+                "錫インゴット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "青銅インゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "火打石と打ち金": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "発展制御回路": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "化学タンク(種類不問)": f"{int(quantity/64)}スタックと{quantity%64}個",
+            }
+        else:
+            return {
+                "錫インゴット": f"{quantity*4}個",
+                "青銅インゴット": f"{quantity*2}個",
+                "火打石と打ち金": f"{quantity}個",
+                "発展制御回路": f"{quantity}個",
+                "化学タンク": f"{quantity}個"
+                }
+    if name == "エネルギータブレット":
+        if quantity*4 >= 64:
+            return {
+                "レッドストーンダスト": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "金インゴット": f"{int(quantity*3/64)}スタックと{quantity*3%64}個",
+                "吹込合金": f"{int(quantity*2/64)}スタックと{quantity*2%64}個"
+            }
+        else:
+            return {
+                "レッドストーンダスト": f"{quantity*4}個",
+                "金インゴット": f"{quantity*3}個",
+                "吹込合金": f"{quantity*2}個"
+            }
     else:
         return "有効な値を入力してください"
     
