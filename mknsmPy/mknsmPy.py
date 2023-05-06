@@ -317,6 +317,21 @@ def Calc(name, quantity):
                 "金インゴット": f"{quantity*3}個",
                 "吹込合金": f"{quantity*2}個"
             }
+    if name == "コンフィギュレーター":
+        if quantity*2 >= 64:
+            return {
+                "吹込合金": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "ラピスラズリ": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "エネルギータブレット": f"{quantity/64}スタックと{quantity%64}個",
+                "棒": f"{quantity/64}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "吹込合金": f"{quantity*2}個",
+                "ラピスラズリ": f"{quantity}個",
+                "エネルギータブレット": f"{quantity}個",
+                "棒": f"{quantity}個"
+            }
     else:
         return "有効な値を入力してください"
     
