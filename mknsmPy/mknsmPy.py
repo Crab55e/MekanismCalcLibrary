@@ -265,7 +265,7 @@ def Calc(name, quantity):
                 "吹込合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
                 "原子合金": f"{int(quantity/64)}スタックと{quantity%64}個",
                 "精製黒曜石インゴット": f"{int(quantity/64)}スタックと{quantity%64}個",
-                "エネルギータブレット": f"{int(quantity/64)}スタックと{quantity%}個",
+                "エネルギータブレット": f"{int(quantity/64)}スタックと{quantity%64}個",
             }
         else:
             return {
