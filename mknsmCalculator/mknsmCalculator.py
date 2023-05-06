@@ -159,6 +159,17 @@ def mknsmCalc(name, quantity):
                 "原子合金": f"{quantity*2}個",
                 "ダイヤモンド": f"{quantity}個"
             }
+    if name == "HDPEシート":
+        if quantity*3 >= 64:
+            return {
+                "HDPEペレット": f"{int(quantity*3/64)}スタックと{quantity*3%64}個",
+                "注意": "濃縮室で濃縮した場合の数値です"
+            }
+        else:
+            return {
+                "HDPEペレット": f"{quantity*3}個",
+                "注意": "濃縮室で濃縮した場合の数値です"
+            }
     else:
         return "有効な値を入力してください"
     
