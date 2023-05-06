@@ -1,4 +1,4 @@
-def mknsmCalc(name, quantity):
+def Calc(name, quantity):
     if name == "塩ブロック":
         if quantity*4 >= 64:
             return {
