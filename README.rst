@@ -6,15 +6,8 @@ MekanismCalcLiblary
 
    mknsmPy rogo
 
-.. raw:: html
-
-   <h2 align="center">
-
 mekanismの材料計算をもっと簡単に
-
-.. raw:: html
-
-   </h2>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 |MIT License| |PyPI version|
 
