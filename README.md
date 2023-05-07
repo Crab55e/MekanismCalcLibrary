@@ -4,7 +4,7 @@
 
 <h2 align="center">mekanismの材料計算をもっと簡単に</h2>
 
-[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/regonn/polar_bear/blob/master/LICENSE.txt)
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/hihimamuLab/MekanismCalcLibrary/blob/main/LICENSE)
 [![PyPI version](https://badge.fury.io/py/mknsmPy.svg)](https://badge.fury.io/py/mknsmPy)
 
 > pip install mknsmPy
