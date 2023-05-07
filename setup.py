@@ -1,13 +1,17 @@
 from setuptools import setup, find_packages
 
+with open('README.md', encoding='utf-8') as f:
+    long_description = f.read()
+
 setup(
-    name = "mknsmPy", 
-    license = "MIT",
-    version= "0.1", 
-    packages = find_packages(), 
-    author = "hihimamu", 
-    author_email = "mamu.pypi@shchiba.uk", 
-    url = "https://github.com/hihimamuLab/MekanismCalcLibrary.git", 
-    description = "mekanism material calculator", 
-    keywords = ["mekanism", "mechanism", "mknsm","mknsmPy"] 
+    name             = "mknsmPy", 
+    license          = "MIT",
+    version          = "0.1", 
+    packages         = find_packages(), 
+    author           = "hihimamu", 
+    author_email     = "mamu.pypi@shchiba.uk", 
+    url              = "https://github.com/hihimamuLab/MekanismCalcLibrary.git", 
+    description      = "mekanism material calculator", 
+    long_description = long_description,
+    keywords         = ["mekanism", "mechanism", "mknsm","mknsmPy"]
 )
