@@ -34,6 +34,6 @@ mekanismの材料計算をもっと簡単に
     ...}
 
 .. |MIT License| image:: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
-   :target: https://github.com/regonn/polar_bear/blob/master/LICENSE.txt
+   :target: https://github.com/hihimamuLab/MekanismCalcLibrary/blob/main/LICENSE
 .. |PyPI version| image:: https://badge.fury.io/py/mknsmPy.svg
    :target: https://badge.fury.io/py/mknsmPy
