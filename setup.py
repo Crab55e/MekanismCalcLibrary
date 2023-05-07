@@ -9,6 +9,5 @@ setup(
     author_email = "mamu.pypi@shchiba.uk", 
     url = "https://github.com/hihimamuLab/MekanismCalcLibrary.git", 
     description = "mekanism material calculator", 
-    keywords = ["mekanism", "mechanism", "mknsm","mknsmPy"], 
-    classifiers = "Programming Language :: Python :: 3.10"
+    keywords = ["mekanism", "mechanism", "mknsm","mknsmPy"] 
 )
