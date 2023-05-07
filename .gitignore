@@ -1,4 +1,5 @@
 LICENSE
 MANIFEST.in
 dist/
-build/*
+build/
+mknsmPy.egg-info/
