@@ -2,7 +2,7 @@
 
 ![mknsmPy rogo](https://user-images.githubusercontent.com/122292089/236683530-15675752-b36e-428e-9e9f-1a1f292853f0.png)
 
-<h2 align="center">mekanismの材料計算をもっと簡単に</h2>
+### mekanismの材料計算をもっと簡単に
 
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/hihimamuLab/MekanismCalcLibrary/blob/main/LICENSE)
 [![PyPI version](https://badge.fury.io/py/mknsmPy.svg)](https://badge.fury.io/py/mknsmPy)
