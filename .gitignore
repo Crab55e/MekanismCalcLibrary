@@ -1,5 +1,4 @@
 LICENSE
 MANIFEST.in
 dist/
-build/
-
+build/*
