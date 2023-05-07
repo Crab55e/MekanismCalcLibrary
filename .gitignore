@@ -1,6 +1,5 @@
 LICENSE
 MANIFEST.in
-README.rst
 dist/
 build/
 mknsmPy.egg-info/
