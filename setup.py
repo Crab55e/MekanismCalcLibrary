@@ -6,7 +6,7 @@ with open('README.rst', encoding='utf-8') as f:
 setup(
     name                          = "mknsmPy", 
     license                       = "MIT",
-    version                       = "0.1", 
+    version                       = "0.2", 
     packages                      = find_packages(), 
     author                        = "hihimamu", 
     author_email                  = "mamu.pypi@shchiba.uk", 
