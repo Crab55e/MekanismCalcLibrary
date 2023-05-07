@@ -10,5 +10,5 @@ setup(
     url = "https://github.com/hihimamuLab/MekanismCalcLibrary.git", 
     description = "mekanism material calculator", 
     keywords = ["mekanism", "mechanism", "mknsm","mknsmPy"], 
-    classfiers = "Programming Language :: Python :: 3.10"
+    classifiers = "Programming Language :: Python :: 3.10"
 )

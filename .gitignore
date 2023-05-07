@@ -1,3 +1,4 @@
 LICENSE
 MANIFEST.in
-/mknsmPy/__init__.py
+dist/
+mknsmPy.egg-info/
