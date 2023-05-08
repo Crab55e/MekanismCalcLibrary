@@ -188,6 +188,30 @@ def Calc(name, quantity):
             return {
                 "HDPEの棒": f"{quantity*2}個"
             }
+    if name == "核廃棄物バレル":
+        if quantity*4 >= 64:
+            return {
+                "鋼鉄インゴット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "鉛インゴット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個"
+            }
+        else:
+            return {
+                "鋼鉄インゴット": f"{quantity*4}個",
+                "鉛インゴット": f"{int(quantity*4)}個"
+            }
+    if name == "工業用アラーム":
+        if quantity*6 >= 64:
+            return {
+                "鉛インゴット": f"{int(quantity*6/64)}スタックと{quantity*6%64}個",
+                "基本制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "レッドストーンランプ": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "鉛インゴット": f"{quantity*6}個",
+                "基本制御回路": f"{quantity*2}個",
+                "レッドストーンランプ": f"{quantity}個"
+            }
     if name == "スキューバマスク":
         if quantity*3 >= 64:
             return {
@@ -331,6 +355,32 @@ def Calc(name, quantity):
                 "ラピスラズリ": f"{quantity}個",
                 "エネルギータブレット": f"{quantity}個",
                 "棒": f"{quantity}個"
+            }
+    if name == "ネットワークリーダー":
+        if quantity*2 >= 64:
+            return {
+                "吹込合金": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "ガラス": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "エネルギータブレット": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "鋼鉄インゴット": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "吹込合金": f"{quantity*2}個",
+                "ガラス": f"{quantity}個",
+                "エネルギータブレット": f"{quantity}個",
+                "鋼鉄インゴット": f"{quantity}個"
+            }
+    if name == "鉱石辞書":
+        if quantity >= 64:
+            return {
+                "基本制御回路": f"{quantity/64}スタックと{quantity%64}個",
+                "本": f"{quantity/64}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "基本制御回路": f"{quantity}個",
+                "本": f"{quantity}個"
             }
     else:
         return "有効な値を入力してください"
