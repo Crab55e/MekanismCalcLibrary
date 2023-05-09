@@ -382,6 +382,247 @@ def Calc(name, quantity):
                 "基本制御回路": f"{quantity}個",
                 "本": f"{quantity}個"
             }
+    if name == "ポータブルテレポーター":
+        if quantity*2 >= 64:
+            return {
+                "エネルギータブレット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "基本制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "テレポーテーションコア": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "エネルギータブレット": f"{quantity*2}個",
+                "基本制御回路": f"{quantity*2}個",
+                "テレポーテーションコア": f"{quantity}個"
+            }
+    if name == "設定カード":
+        if quantity*4 >= 64:
+            return {
+                "吹込合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "基本制御回路": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "吹込合金": f"{quantity*4}個",
+                "基本制御回路": f"{quantity}個"
+            }
+    if name == "クラフトレシピ":
+        if quantity >= 64:
+            return {
+                "基本制御回路": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "紙": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "基本制御回路": f"{quantity}個",
+                "紙": f"{quantity}個"
+            }
+    if name == "弾性波解析器":
+        if quantity*7 >= 64:
+            return {
+                "鋼鉄インゴット": f"{int(quantity*7/64)}スタックと{quantity*7%64}個",
+                "ラピスラズリ": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "エネルギータブレット": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "鋼鉄インゴット": f"{quantity*7}個",
+                "ラピスラズリ": f"{quantity}個",
+                "エネルギータブレット": f"{quantity}個"
+            }
+    if name == "計量スポイト":
+        if quantity*5 >= 64:
+            return {
+                "板ガラス": f"{int(quantity*5)}スタックと{quantity%64}個",
+                "オスミウムインゴット": f"{int(quantity/64)}個"
+            }
+        else:
+            return {
+                "板ガラス": f"{quantity*5}個",
+                "オスミウムインゴット": f"{quantity}個"
+            }
+    if name == "ガイガーカウンター":
+        if quantity*4 >= 64:
+            return {
+                "鉛インゴット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "基本制御回路": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "鉛インゴット": f"{quantity*4}個",
+                "基本制御回路": f"{quantity}個"
+            }
+    if name == "線量計":
+        if  quantity*4 >= 64:
+            return {
+                "鉛インゴット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "レッドストーンダスト": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "鉛インゴット": f"{quantity*4}個",
+                "レッドストーンダスト": f"{quantity}個"
+            }
+    if name == "キャンティーン":
+        if quantity*4 >= 64:
+            return {
+                "錫インゴット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "ボウル": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "錫インゴット": f"{quantity*4}個",
+                "ボウル": f"{quantity}個"
+            }
+    if name == "防護マスク":
+        if quantity*5 >= 64:
+            return {
+                "鉛インゴット": f"{int(quantity*5/64)}スタックと{quantity*5%64}個",
+                "橙色の染料": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "鉛インゴット": f"{quantity*5}個",
+                "橙色の染料": f"{quantity}個"
+            }
+    if name == "防護ガウン":
+        if quantity*8 >= 64:
+            return {
+                "鉛インゴット": f"{int(quantity*8/64)}スタックと{quantity*8%64}個",
+                "橙色の染料": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "鉛インゴット": f"{quantity*8}個",
+                "橙色の染料": f"{quantity}個"
+            }
+    if name == "防護パンツ":
+        if quantity*7 >= 64:
+            return {
+                "鉛インゴット": f"{int(quantity*7/64)}スタックと{quantity*7%64}個",
+                "橙色の染料": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "鉛インゴット": f"{quantity*7}個",
+                "橙色の染料": f"{quantity}個"
+            }
+    if name == "防護ブーツ":
+        if quantity*4 >= 64:
+            return {
+                "鉛インゴット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "黒色の染料": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "鉛インゴット": f"{quantity*4}個",
+                "黒色の染料": f"{quantity}個"
+            }
+    if name == "MekaSuitヘルメット":
+        if quantity*4 >= 64:
+            return {
+                "HDPEシート": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "ポロニウムペレット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "究極制御回路": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "ネザライトのヘルメット": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "基本インダクションセル": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "HDPEシート": f"{quantity*4}個",
+                "ポロニウムペレット": f"{quantity*2}個",
+                "究極制御回路": f"{quantity}個",
+                "ネザライトのヘルメット": f"{quantity}個",
+                "基本インダクションセル": f"{quantity}個"
+            }
+    if name == "MekaSuitボディアーマー":
+        if quantity*4 >= 64:
+            return {
+                "HDPEシート": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "ポロニウムペレット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "究極制御回路": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "ネザライトのチェストプレート": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "基本インダクションセル": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "HDPEシート": f"{quantity*4}個",
+                "ポロニウムペレット": f"{quantity*2}個",
+                "究極制御回路": f"{quantity}個",
+                "ネザライトのチェストプレート": f"{quantity}個",
+                "基本インダクションセル": f"{quantity}個"
+            }
+    if name == "MekaSuitパンツ":
+        if quantity*4 >= 64:
+            return {
+                "HDPEシート": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "ポロニウムペレット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "究極制御回路": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "ネザライトのレギンス": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "基本インダクションセル": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "HDPEシート": f"{quantity*4}個",
+                "ポロニウムペレット": f"{quantity*2}個",
+                "究極制御回路": f"{quantity}個",
+                "ネザライトのレギンス": f"{quantity}個",
+                "基本インダクションセル": f"{quantity}個"
+            }
+    if name == "MekaSuitブーツ":
+        if quantity*4 >= 64:
+            return {
+                "HDPEシート": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "ポロニウムペレット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "究極制御回路": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "ネザライトのブーツ": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "基本インダクションセル": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "HDPEシート": f"{quantity*4}個",
+                "ポロニウムペレット": f"{quantity*2}個",
+                "究極制御回路": f"{quantity}個",
+                "ネザライトのブーツ": f"{quantity}個",
+                "基本インダクションセル": f"{quantity}個"
+            }
+    if name == "Meka-Tool":
+        if quantity*2 >= 64:
+            return {
+                "究極制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "HDPEシート": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "ポロニウムペレット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "コンフィギュレーター": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "原子分解機": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "基本インダクションセル": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "究極制御回路": f"{quantity*2}個",
+                "HDPEシート": f"{quantity*2}個",
+                "ポロニウムペレット": f"{quantity*2}個",
+                "コンフィギュレーター": f"{quantity}個",
+                "原子分解機": f"{quantity}個",
+                "基本インダクションセル": f"{quantity}個"
+            }
+    if name == "改造ステーション": 
+        if quantity*4 >= 64:
+            return {
+                "HDPEシート": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "究極制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "チェスト": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "鋼鉄ケーシング": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "ポロニウムペレット": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "HDPEシート": f"{int(quantity*4)}個",
+                "究極制御回路": f"{int(quantity*2)}個",
+                "チェスト": f"{int(quantity)}個",
+                "鋼鉄ケーシング": f"{int(quantity)}個",
+                "ポロニウム": f"{int(quantity)}個"
+            }
+    
     else:
         return "有効な値を入力してください"
     
