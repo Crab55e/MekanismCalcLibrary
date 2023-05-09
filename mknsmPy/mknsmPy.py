@@ -698,6 +698,22 @@ def Calc(name, quantity):
                 "発展型太陽光発電機": f"{quantity}個",
                 "モジュールベース": f"{quantity}個"
             }
+    if name == "攻撃力増強ユニット":
+        if quantity*4 >= 64:
+            return {
+                "吹込合金": f"{int(quantity*4/64)}ストックと{quantity*4%64}個",
+                "HDPEシート": f"{int(quantity*3/64)}ストックと{quantity*3%64}個",
+                "鉄の剣": f"{int(quantity/64)}ストックと{quantity%64}個",
+                "モジュールベース": f"{int(quantity/64)}ストックと{quantity%64}個"
+            }
+        else:
+            return {
+                "吹込合金": f"{quantity*4}個",
+                "HDPEシート": f"{quantity*3}個",
+                "鉄の剣": f"{quantity}個",
+                "モジュールベース": f"{quantity}個"
+            }
+
     else:
         return "有効な値を入力してください"
     
