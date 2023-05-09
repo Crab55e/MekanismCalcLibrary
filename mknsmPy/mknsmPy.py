@@ -730,7 +730,7 @@ def Calc(name, quantity):
                 "フリーランナー": f"{quantity}個",
                 "モジュールベース": f"{quantity}個"
             }
-    if name == "期間式推進ユニット":
+    if name == "機関式推進ユニット":
         if quantity*3 >= 64:
             return {
                 "ポロニウムペレット": f"{int(quantity*3/64)}スタックと{quantity*3%64}個",
@@ -739,7 +739,7 @@ def Calc(name, quantity):
                 "ダイヤモンドのレギンス": f"{itn(quantity/64)}スタックと{quantity%64}個",
                 "モジュールベース": f"{int(quantity/64)}スタックと{quantity%64}個"
             }
-
+    if name == ""
     else:
         return "有効な値を入力してください"
     
