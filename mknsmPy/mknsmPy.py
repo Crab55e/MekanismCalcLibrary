@@ -622,7 +622,82 @@ def Calc(name, quantity):
                 "鋼鉄ケーシング": f"{int(quantity)}個",
                 "ポロニウム": f"{int(quantity)}個"
             }
-    
+    if name == "モジュールベース":
+        if quantity%2 == 0:
+            if quantity*4 >= 64:
+                return {
+                    "青銅塊": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                    "錫インゴット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                    "HDPEシート": f"{int(quantity/64)}スタックと{quantity%64}個"
+                }
+            else:
+                return {
+                    "青銅塊": f"{quantity*4}個",
+                    "錫インゴット": f"{quantity*4}個",
+                    "HDPEシート": f"{quantity}個"
+                }
+        else:
+            return "有効な値を入力してください(2の倍数個)"
+    if name == "栄養駐車ユニット":
+        if quantity*4 >= 64:
+            return {
+                "強化合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "ポロニウムペレット": f"{int(quantity*3/64)}スタックと{quantity*3%64}個",
+                "キャンティーン": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "モジュールベース": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "強化合金": f"{quantity*4}個",
+                "ポロニウムペレット": f"{quantity*3}個",
+                "キャンティーン": f"{quantity}個",
+                "モジュールベース": f"{quantity}個"
+            }
+    if name == "ジェットパックユニット": 
+        if quantity*4 >= 64:
+            return {
+                "強化合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "ポロニウムペレット": f"{int(quantity*3/64)}スタックと{quantity*3%64}個",
+                "ジェットパック": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "モジュールベース": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "強化合金": f"{quantity*4}個",
+                "ポロニウムペレット": f"{quantity*3}個",
+                "ジェットパック": f"{quantity}個",
+                "モジュールベース": f"{quantity}個"
+            }
+    if name == "視界強化ユニット":
+        if quantity*4 >= 64:
+            return {
+                "強化合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "ポロニウムペレット": f"{int(quantity*3/64)}スタックと{quantity*3%64}個",
+                "エメラルド": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "モジュールベース": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "強化合金": f"{quantity*4}個",
+                "ポロニウムペレット": f"{quantity*3}個",
+                "エメラルド": f"{quantity}個",
+                "モジュールベース": f"{quantity}個"
+            }
+    if name == "太陽光再充電ユニット":
+        if quantity*4 >= 64:
+            return {
+                "強化合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "ポロニウムペレット": f"{int(quantity*3/64)}スタックと{quantity*3%64}個",
+                "発展型太陽光発電機": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "モジュールベース": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "強化合金": f"{quantity*4}個",
+                "ポロニウムペレット": f"{quantity*3}個",
+                "発展型太陽光発電機": f"{quantity}個",
+                "モジュールベース": f"{quantity}個"
+            }
     else:
         return "有効な値を入力してください"
     
