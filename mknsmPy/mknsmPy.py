@@ -637,7 +637,7 @@ def Calc(name, quantity):
                     "HDPEシート": f"{quantity}個"
                 }
         else:
-            return "有効な値を入力してください(2の倍数個)"
+            return "有効な値を入力してください(2n個)"
     if name == "栄養駐車ユニット":
         if quantity*4 >= 64:
             return {
