@@ -739,7 +739,6 @@ def Calc(name, quantity):
                 "ダイヤモンドのレギンス": f"{itn(quantity/64)}スタックと{quantity%64}個",
                 "モジュールベース": f"{int(quantity/64)}スタックと{quantity%64}個"
             }
-    if name == ""
     else:
         return "有効な値を入力してください"
     
