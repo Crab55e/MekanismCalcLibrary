@@ -1,3 +1,31 @@
+class Lib:
+    
+    lib = []
+    
+    length = int(len(lib))
+    
+    def __init__(self,lib=lib,length=length):
+        
+        self.lib = lib    
+        self.length = length
+    
+    def head(self, l=5):
+       
+        self.head = self.lib[:l]
+        return self.head
+        
+    def tail(self, l=5):
+
+        tail_len = int(len(self.lib)) - l
+        self.tail = self.lib[tail_len:]
+        return self.tail
+
+    def set(self, s=0, e=-1):
+
+        self.set = self.lib[s:e]
+        return self.set
+    
+
 def Calc(name, quantity):
     if name == "塩ブロック":
         if quantity*4 >= 64:
@@ -736,9 +764,23 @@ def Calc(name, quantity):
                 "ポロニウムペレット": f"{int(quantity*3/64)}スタックと{quantity*3%64}個",
                 "強化合金": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
                 "エネルギータブレット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
-                "ダイヤモンドのレギンス": f"{itn(quantity/64)}スタックと{quantity%64}個",
+                "ダイヤモンドのレギンス": f"{int(quantity/64)}スタックと{quantity%64}個",
                 "モジュールベース": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+    if name == "線計量ユニット":
+        if quantity*4 >= 64:
+            return {
+                "吹込合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "HDPEシート": f"{int(quantity*3/64)}スタックと{quantity*3%64}個",
+                "線計量": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "モジュールベース": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "吹込合金": f"{quantity*4}個",
+                "HDPEシート": f"{quantity*3}個",
+                "線計量": f"{quantity}個",
+                "モジュールベース": f"{quantity}個"
             }
     else:
         return "有効な値を入力してください"
-    
