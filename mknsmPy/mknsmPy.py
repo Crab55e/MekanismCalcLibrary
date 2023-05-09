@@ -782,5 +782,220 @@ def Calc(name, quantity):
                 "線計量": f"{quantity}個",
                 "モジュールベース": f"{quantity}個"
             }
+    if name == "採掘漸増ユニット":
+        if quantity*4 >= 64:
+            return {
+                "吹込合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "HDPEシート": f"{int(quantity*3/64)}スタックと{quantity*3%64}個",
+                "鉄のツルハシ": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "モジュールベース": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "吹込合金": f"{quantity*4}個",
+                "HDPEシート": f"{quantity*3}個",
+                "鉄のツルハシ": f"{quantity}個",
+                "モジュールベース": f"{quantity}個"
+            }
+    if name == "電解呼吸ユニット":
+        if quantity*4 >= 64:
+            return {
+                "吹込合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "HDPEシート": f"{int(quantity*3/64)}スタックと{quantity*3%64}個",
+                "電解コア": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "モジュールベース": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "吹込合金": f"{quantity*4}個",
+                "HDPEシート": f"{quantity*3}個",
+                "電解コア": f"{quantity}個",
+                "モジュールベース": f"{quantity}個"
+            }
+    if name == "重力変調ユニット":
+        if quantity*3 >= 64:
+            return {
+                "反物質ペレット": f"{int(quantity*3/64)スタックと{quantity*3%64}}個",
+                "原子合金": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "究極インダクションプロバイダ": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "ネザースター": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "モジュールベース": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "反物質ペレット": f"{quantity*3}個",
+                "原子合金": f"{quantity*2}個",
+                "究極インダクションプロバイダ": f"{quantity*2}個",
+                "ネザースター": f"{quantity}個",
+                "mモジュールベース": f"{quantity}個"
+            }
+    if name == "鉱脈採掘ユニット":
+        if quantity*3 >= 64:
+            return {
+                "ポロニウムペレット": f"{int(quantity*3/64)}スタックと{quantity*3%64}個",
+                "強化合金": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "ダイヤモンドのツルハシ": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "ダイヤモンドの斧": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "ダイヤモンドのシャベル": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "モジュールベース": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "ポロニウムペレット": "{quantity*3}個",
+                "強化合金": f"{quantity*2}個",
+                "ダイヤモンドのツルハシ": f"{quantity}個",
+                "ダイヤモンドの斧": f"{quantity}個",
+                "ダイヤモンドのシャベル": f"{quantity}個",
+                "モジュールベース": f"{quantity}個"
+            }
+    if name == "耕作ユニット":
+        if quantity*4 >= 64:
+            return {
+                "吹込合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "HDPEシート": f"{int(quantity*3/64)}スタックと{quantity*3%64}個",
+                "鉄のクワ": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "モジュールベース": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "吹込合金": f"{quantity*4}個",
+                "HDPEシート": f"{quantity*3}個",
+                "鉄のクワ": f"{quantity}個",
+                "モジュールベース": f"{quantity}個"
+            }
+    if name == "テレポートユニット":
+        if quantity*4 >= 64:
+            return {
+                "原子合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "反物質ペレット": f"{int(quantity*3/64)}スタックと{quantity*3%64}個",
+                "テレポーテーションコア": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "モジュールベース": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "原子合金": f"{quantity*4}個",
+                "反物質ペレット": f"{quantity*3}個",
+                "テレポーテーションコア": f"{quantity}個",
+                "モジュールベース": f"{quantity}個"
+            }
+    if name == "電力配分ユニット":
+        if quantity*4 >= 64:
+            return {
+                "強化合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "ポロニウムペレット": f"{int(quantity*3/64)}スタックと{quantity*3%64}個",
+                "基本インダクションプロバイダ": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "モジュールベース": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "強化合金": f"{quantity*4}個",
+                "ポロニウムペレット": f"{quantity*3}個",
+                "基本インダクションプロバイダ": f"{quantity}個",
+                "モジュールベース": f"{quantity}個"
+            }
+    if name == "エネルギーユニット":
+        if quantity*4 >= 64:
+            return {
+                "吹込合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "HDPEシート": f"{int(quantity*3/64)}スタックと{quantity*3%64}個",
+                "基本インダクションセル": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "モジュールベース": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+    if name == "シルクタッチユニット":
+        if quantity*3 >= 64:
+            return {
+                "ポロニウムペレット": f"{int(quantity*3/64)}スタックと{quantity*3%64}個",
+                "強化合金": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "ダイヤモンドのツルハシ": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "精製グロウストーンブロック": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "モジュールベース": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "ポロニウムペレット": f"{quantity*3}個",
+                "強化合金": f"{quantity*2}個",
+                "ダイヤモンドのツルハシ": f"{quantity*2}個",
+                "精製グロウストーンブロック": f"{quantity}個",
+                "モジュールベース": f"{quantity}個"
+            }
+    if name == "放射線防護ユニット":
+        if quantity*4 >= 64:
+            return {
+                "吹込合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "HDPEシート": f"{int(quantity*3/64)}スタックと{quantity*3%64}個",
+                "鉛ブロック": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "モジュールベース": f"{quantity/64}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "吹込合金": f"{quantity*4}個",
+                "HDPEシート": f"{quantity*3}個",
+                "鉛ブロック": f"{quantity}個",
+                "モジュールベース": f"{quantity}個"
+            }
+    if name == "磁気誘導ユニット":
+        if quantity*3 >= 64:
+            return {
+                "ポロニウムペレット": f"{int(quantity*3/64)}スタックと{quantity*3%64}個",
+                "強化合金": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "精鋭制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "鉄格子": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "モジュールベース": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "ポロニウムペレット": f"{quantity*3}個",
+                "強化合金": f"{quantity*2}個",
+                "精鋭制御回路": f"{quantity*2}個",
+                "鉄格子": f"{quantity}個",
+                "モジュールベース": f"{quantity}個"
+            }
+    if name == "呼吸浄化ユニット":
+        if quantity*4 >= 64:
+            return {
+                "強化合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "ポロニウムペレット": f"{int(quantity*2/64)}スタックと{quantity*2/64}個",
+                "防護マスク": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "スキューバマスク": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "モジュールベース": f"{int(quantity/64)}スタックと{quantity%64}個",
+            }
+        else:
+            return {
+                "強化合金": f"{quantity*4}個",
+                "ポロニウムペレット": f"{quantity*2}個",
+                "防護マスク": f"{quantity}個",
+                "スキューバマスク": f"{quantity}個",
+                "モジュールベース": f"{quantity}個"
+            }
+    if name == "基本エネルギーキューブ":
+        if quantity*4 >= 64:
+            return {
+                "レッドストーンダスト": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "鉄インゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "エネルギータブレット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "鋼鉄ケーシング": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "レッドストーンダスト": f"{quantity*4}個",
+                "鉄インゴット": f"{quantity*2}個",
+                "エネルギータブレット": f"{quantity}個",
+                "鋼鉄ケーシング": f"{quantity}個"
+            }
+    if name == "発展エネルギーキューブ":
+        if quantity*4 >= 64:
+            return {
+                "吹込合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "オスミウムインゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "エネルギータブレット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "基本エネルギーキューブ": f"{int(quantity/64)}スタックと{quantity%64}個",
+                }
+        else:
+            return {
+                "吹込合金": f"{quantity*4}個",
+                "オスミウムインゴット": f"{quantity*2}個",
+                "エネルギータブレット": f"{quantity*2}個",
+                "基本エネルギーキューブ": f"{quantity}個"
+            }
     else:
         return "有効な値を入力してください"
