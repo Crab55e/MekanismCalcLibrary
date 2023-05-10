@@ -1341,6 +1341,83 @@ def Calc(name, quantity):
                 "基本制御回路": f"{quantity*2)個",
                 "鋼鉄ケーシング": f"{quantity}個"
             }
+    if name == "精密製材機":
+        if quantity*4 >= 64:
+            return {
+                "鉄インゴット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "吹込合金": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "基本制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "鋼鉄ケーシング": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "鉄インゴット": f"{quantity*4}個",
+                "吹込合金": f"{quantity*2}個",
+                "基本制御回路": f"{quantity*2}個",
+                "鋼鉄ケーシング": f"{quantity}個"
+            }
+    if name == "定式組み立て機":
+        if quantity*4 >= 64:
+            return {
+                "鋼鉄インゴット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "基本制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "作業台": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "チェスト": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "鋼鉄ケーシング": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "鋼鉄インゴット": f"{quantity*4}個",
+                "基本制御回路": f"{quantity*2}個",
+                "作業台": f"{quantity}個",
+                "チェスト": f"{quantity}個",
+                "鋼鉄ケーシング": f"{quantity}個"
+            }
+    if name == "オスミウム圧縮機":
+        if quantity*4 >= 64:
+            return {
+                "吹込合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "バケツ": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "発展制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "鋼鉄ケーシング": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "吹込合金": f"{quantity*4}個",
+                "バケツ": f"{quantity*2}個",
+                "発展制御回路": f"{quantity*2}個",
+                "鋼鉄ケーシング": f"{quantity}個"
+            }
+    if name == "浄化室":
+        if quantity*4 >= 64:
+            return {
+                "吹込合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "オスミウムインゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "発展制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "濃縮室": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "吹込合金": f"{quantity*4}個",
+                "オスミウムインゴット": f"{quantity*2}個",
+                "発展制御回路": f"{quantity*2}個",
+                "濃縮室": f"{quantity}個"
+            }
+    if name == "結合機":
+        if quantity*4 >= 64:
+            return {
+                "強化合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "精鋭制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "丸石": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "鋼鉄ケーシング": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "強化合金": f"{quantity*4}個",
+                "精鋭制御回路": f"{quantity*2}個",
+                "丸石": f"{quantity*2}個",
+                "鋼鉄ケーシング": f"{quantity}個"
+            }
     else:
         return "有効な値を入力してください"
         
