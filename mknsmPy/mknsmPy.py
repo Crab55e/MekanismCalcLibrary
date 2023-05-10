@@ -1128,5 +1128,116 @@ def Calc(name, quantity):
                 "レッドストーンダスト": f"{quantity*2}個",
                 "基本制御回路": f"{quantity}個"
             }
+    if name == "発展ビン":
+        if quantity*5 >= 64:
+            return {
+                "丸石": f"{int(quantity*5%64)}スタックと{quantity*5%64}個",
+                "吹込合金": f"{int(quantity*2%64)}スタックと{quantity*2%64}個",
+                "発展制御回路": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "丸石": f"{quantity*5}個",
+                "吹込合金": f"{quantity*2}個",
+                "発展制御回路": f"{quantity}個"
+            }
+    if name == "精鋭ビン":
+        if quantity*5 >= 64:
+            return {
+                "丸石": f"{int(quantity*5%64)}スタックと{quantity*5%64}個",
+                "強化合金": f"{int(quantity*2%64)}スタックと{quantity*2%64}個",
+                "精鋭制御回路": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "丸石": f"{quantity*5}個",
+                "強化合金": f"{quantity*2}個",
+                "精鋭制御回路": f"{quantity}個"
+            }
+    if name == "究極ビン":
+        if quantity*5 >= 64:
+            return {
+                "丸石": f"{int(quantity*5%64)}スタックと{quantity*5%64}個",
+                "原子合金": f"{int(quantity*2%64)}スタックと{quantity*2%64}個",
+                "究極制御回路": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "丸石": f"{quantity*5}個",
+                "原子合金": f"{quantity*2}個",
+                "究極制御回路": f"{quantity}個"
+            }
+    if name == "充電パッド":
+        if quantity*3 >= 64:
+            return {
+                "磨かれたブラックストーンの感圧版": f"{int(quantity*3/64)}スタックと{quantity*3%64}個",
+                "鋼鉄インゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "エネルギータブレット": f"{int(quantity/64)}スタックと{quantity%64}個",
+            }
+        else:
+            return {
+                "磨かれたブラックストーンの感圧版": f"{quantity*3}個",
+                "鋼鉄インゴット": f"{quantity*2}個",
+                "エネルギータブレット": f"{quantity}個"
+            }
+    if name == "セキュリティーデスク":
+        if quantity*4 >= 64:
+            return {
+                "鋼鉄インゴット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "精鋭制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "ガラス": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "鋼鉄ケーシング": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "テレポーテーションコア": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "鋼鉄インゴット": f"{quantity*4}個",
+                "精鋭制御回路": f"{quantity*2}個",
+                "ガラス": f"{quantity}個",
+                "鋼鉄ケーシング": f"{quantity}個",
+                "テレポーテーション": f"{quantity}個"
+            }
+    if name == "パーソナルチェスト":
+        if quantity*5 >= 64:
+            return {
+                "鋼鉄インゴット": f"{int(quantity*5/64)}スタックと{quantity*5%64}個",
+                "チェスト": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "ガラス": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "基本制御回路": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "鋼鉄インゴット": f"{quantity*5}個",
+                "チェスト": f"{quantity*2}個",
+                "ガラス": f"{quantity}個",
+                "基本制御回路": f"{quantity}個"
+            }
+    if name == "量子もつれ転送機":
+        if quantity*4 >= 64:
+            return {
+                "精製黒曜石インゴット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "原子合金": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "究極制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "テレポーテーションコア": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "精製黒曜石インゴット": f"{quantity*4}個",
+                "原子合金": f"{quantity*2}個",
+                "究極制御回路": f"{quantity*2}個",
+                "テレポーテーションコア": f"{quantity}個"
+            }
+    if name == "薪木ストーブ":
+        if quantity*5 >= 64:
+            return {
+                "鋼鉄インゴット": f"{int(quantity*5/64)}スタックと{quantity*5%64}個",
+                "かまど": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "基本制御回路": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "鋼鉄ケーシング": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "鋼鉄インゴット": f"{quantity*5}個",
+                "かまど": f"{quantity}"}
     else:
         return "有効な値を入力してください"
