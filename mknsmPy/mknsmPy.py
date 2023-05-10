@@ -1281,5 +1281,20 @@ def Calc(name, quantity):
                 "ガラス": f"{quantity*4}個",
                 "オスミウムインゴット": f"{quantity}個"
             }
+    if name == "冶金吹込機":
+        if quantity*4 >= 64:
+            return {
+                "鉄インゴット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "レッドストーンダスト": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "かまど": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "オスミウムインゴット": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "鉄インゴット": f"{quantity*4}個",
+                "レッドストーンダスト": f"{quantity*2}個",
+                "かまど": f"{quantity*2}個",
+                "オスミウムインゴット": f"{quantity}個"
+            }
     else:
         return "有効な値を入力してください"
