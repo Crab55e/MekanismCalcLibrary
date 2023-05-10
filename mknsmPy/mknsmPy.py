@@ -1326,6 +1326,21 @@ def Calc(name, quantity):
                 "基本制御回路": f"{quantity*2}個",
                 "鋼鉄ケーシング": f"{quantity}個"
             }
+    if name == "粉砕機":
+        if quantity*4 >= 64:
+            return {
+                "レッドストーンダスト": f"{int(quantity*4/64)}スタックと{quantity*3%64}個",
+                "マグマ入りバケツ": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "基本制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "鋼鉄ケーシング": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "レッドストーンダスト": f"{quantity*4}個",
+                "マグマ入りバケツ": f"{quantity*2}個",
+                "基本制御回路": f"{quantity*2)個",
+                "鋼鉄ケーシング": f"{quantity}個"
+            }
     else:
-        return "有効な値を入力してください
+        return "有効な値を入力してください"
         
