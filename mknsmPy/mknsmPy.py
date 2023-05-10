@@ -1268,6 +1268,18 @@ def Calc(name, quantity):
                 "原子合金": f"{quantity}個",
                 "パーソナルチェスト": f"{quantity}個"
             }
-    
+    if name == "鋼鉄ケーシング":
+        if quantity*4 >= 64:
+            return {
+                "鋼鉄インゴット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "ガラス": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "オスミウムインゴット": f"{int(quantity/64)}個"
+            }
+        else:
+            return {
+                "鋼鉄インゴット": f"{quantity*4}個",
+                "ガラス": f"{quantity*4}個",
+                "オスミウムインゴット": f"{quantity}個"
+            }
     else:
         return "有効な値を入力してください"
