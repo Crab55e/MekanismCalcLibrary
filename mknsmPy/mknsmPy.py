@@ -997,5 +997,136 @@ def Calc(name, quantity):
                 "エネルギータブレット": f"{quantity*2}個",
                 "基本エネルギーキューブ": f"{quantity}個"
             }
+    if name == "精鋭エネルギーキューブ":
+        if quantity*4 >= 64:
+            return {
+                "強化合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "金インゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "エネルギータブレット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "発展エネルギーキューブ": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "強化合金": f"{quantity*4}個",
+                "金インゴット": f"{quantity*2}個",
+                "エネルギータブレット": f"{quantity*2}個",
+                "発展エネルギーキューブ": f"{quantity}個"
+            }
+    if name == "究極エネルギーキューブ":
+        if quantity*4 >= 64:
+            return {
+                "原子合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "ダイヤモンド": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "エネルギータブレット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "精鋭エネルギーキューブ": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "原子合金": f"{quantity*4}個",
+                "ダイヤモンド": f"{quantity*2}個",
+                "エネルギータブレット": f"{quantity*2}個",
+                "精鋭エネルギーキューブ": f"{quantity}個"
+            }
+    if name == "基本流体タンク":
+        if quantity*4 >= 64:
+            return {
+                "鉄インゴット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "レッドストーンダスト": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+            }
+        else:
+            return {
+                "鉄インゴット": f"{quantity*4}個",
+                "レッドストーンダスト": f"{quantity*4}個"
+            }
+    if name == "発展流体タンク":
+        if quantity*4 >= 64:
+            return {
+                "鉄インゴット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "吹込合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+            }
+        else:
+            return {
+                "鉄インゴット": f"{quantity*4}個",
+                "吹込合金": f"{quantity*4}個"
+            }
+    if name == "精鋭流体タンク":
+        if quantity*4 >= 64:
+            return {
+                "鉄インゴット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "強化合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+            }
+        else:
+            return {
+                "鉄インゴット": f"{quantity*4}個",
+                "強化合金": f"{quantity*4}個"
+            }
+    if name == "究極流体タンク":
+        if quantity*4 >= 64:
+            return {
+                "鉄インゴット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "原子合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+            }
+        else:
+            return {
+                "鉄インゴット": f"{quantity*4}個",
+                "原子合金": f"{quantity*4}個"
+            }
+    if name == "基本化学タンク":
+        if quantity*4 >= 64:
+            return {
+                "オスミウムインゴット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "レッドストーンダスト": f"{int(quantity*4/64)}スタックと{quantity*4%64}個"
+            }
+        else:
+            return {
+                "オスミウムインゴット": f"{quantity*4}個",
+                "レッドストーンダスト": f"{quantity*4}個"
+            }
+    if name == "発展化学タンク":
+        if quantity*4 >= 64:
+            return {
+                "オスミウムインゴット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "吹込合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個"
+            }
+        else:
+            return {
+                "オスミウムインゴット": f"{quantity*4}個",
+                "吹込合金": f"{quantity*4}個"
+            }
+    if name == "精鋭化学タンク":
+        if quantity*4 >= 64:
+            return {
+                "オスミウムインゴット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "強化合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個"
+            }
+        else:
+            return {
+                "オスミウムインゴット": f"{quantity*4}個",
+                "強化合金": f"{quantity*4}個"
+            }
+    if name == "究極化学タンク":
+        if quantity*4 >= 64:
+            return {
+                "オスミウムインゴット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "原子合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個"
+            }
+        else:
+            return {
+                "オスミウムインゴット": f"{quantity*4}個",
+                "原子合金": f"{quantity*4}個"
+            }
+    if name == "基本ビン":
+        if quantity*5 >= 64:
+            return {
+                "丸石": f"{int(quantity*5%64)}スタックと{quantity*5%64}個",
+                "レッドストーンダスト": f"{int(quantity*2%64)}スタックと{quantity*2%64}個",
+                "基本制御回路": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "丸石": f"{quantity*5}個",
+                "レッドストーンダスト": f"{quantity*2}個",
+                "基本制御回路": f"{quantity}個"
+            }
     else:
         return "有効な値を入力してください"
