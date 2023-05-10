@@ -1238,6 +1238,36 @@ def Calc(name, quantity):
         else:
             return {
                 "鋼鉄インゴット": f"{quantity*5}個",
-                "かまど": f"{quantity}"}
+                "かまど": f"{quantity*2}個",
+                "基本制御回路": f"{quantity}個",
+                "鋼鉄ケーシング": f"{quantity}個"
+            }
+    if name == "段ボール箱":
+        if quantity*4 >= 64:
+            return {
+                "おがくず": f"{int(quantity*4/64)}スタックと{quantity*4%64}個"
+            }
+        else:
+            return {
+                "おがくず": f"{quantity*4}個"
+            }
+    if name == "ロビット":
+        if quantity*2 >= 64:
+            return {
+                "精製黒曜石インゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "エネルギータブレット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "鋼鉄インゴット": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "原子合金": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "パーソナルチェスト": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "精製黒曜石インゴット": f"{quantity*2}個",
+                "エネルギータブレット": f"{quantity*2}個",
+                "鋼鉄インゴット": f"{quantity}個",
+                "原子合金": f"{quantity}個",
+                "パーソナルチェスト": f"{quantity}個"
+            }
+    
     else:
         return "有効な値を入力してください"
