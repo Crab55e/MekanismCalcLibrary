@@ -1454,6 +1454,21 @@ def Calc(name, quantity):
                 "化学タンク(種類不問)": f"{quantity*2}個",
                 "ダイナミックタンク": f"{quantity}個"
             }
+    if name == "化学注入室":
+        if quantity*4 >= 64:
+            return {
+                "強化合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "精鋭制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "金インゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "浄化室": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "強化合金": f"{quantity*4}個",
+                "精鋭制御回路": f"{quantity*2}個",
+                "金インゴット": f"{quantity*2}個",
+                "浄化室": f"{quantity}個"
+            }
     else:
         return "有効な値を入力してください"
 
