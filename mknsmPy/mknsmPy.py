@@ -1450,6 +1450,23 @@ def Calc(name, quantity):
                 "レッドストーンダスト": f"{quantity*2}個",
                 "電解コア": f"{quantity}個"
             }
+    if name == "化学酸化機":
+        if quantity*4 >= 64:
+            return {
+                "吹込合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "基本制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "パーソナルチェスト": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "化学タンク(種類不問)": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "ダイナミックタンク": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "吹込合金": f"{quantity*4}個",
+                "基本制御回路": f"{quantity*2}個",
+                "パーソナルチェスト": f"{quantity}個",
+                "化学タンク(種類不問)": f"{quantity}個"
+                "ダイナミックタンク": f"{quantity}個"
+            }
     else:
         return "有効な値を入力してください"
 
