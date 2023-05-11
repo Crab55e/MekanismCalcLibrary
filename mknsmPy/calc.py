@@ -1,31 +1,3 @@
-class Lib:
-    
-    lib = []
-    
-    length = int(len(lib))
-    
-    def __init__(self,lib=lib,length=length):
-        
-        self.lib = lib    
-        self.length = length
-    
-    def head(self, l=5):
-       
-        self.head = self.lib[:l]
-        return self.head
-        
-    def tail(self, l=5):
-
-        tail_len = int(len(self.lib)) - l
-        self.tail = self.lib[tail_len:]
-        return self.tail
-
-    def set(self, s=0, e=-1):
-
-        self.set = self.lib[s:e]
-        return self.set
-    
-
 def Calc(name, quantity):
     if name == "塩ブロック":
         if quantity*4 >= 64:
