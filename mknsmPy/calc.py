@@ -1516,6 +1516,83 @@ def Calc(name, quantity):
                 "蛍石": f"{quantity*2}個",
                 "鋼鉄ケーシング": f"{quantity}個"
             }
+    if name == "加圧反応室":
+        if quantity*2 >= 64:
+            return {
+                "鋼鉄インゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "基本制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "化学タンク(種類不問)": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "吹込合金": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "濃縮室": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "ダイナミックタンク": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "鋼鉄インゴット": f"{quantity*2}個",
+                "基本制御回路": f"{quantity*2}個",
+                "化学タンク(種類不問)": f"{quantity*2}個",
+                "吹込合金": f"{quantity}個",
+                "濃縮室": f"{quantity}個",
+                "ダイナミックタンク": f"{quantity}個"
+            }
+    if name == "抵抗型発熱機":
+        if quantity*4 >= 64:
+            return {
+                "錫インゴット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "レッドストーンダスト": f"{int(quantity*3/64)}スタックと{quantity*3%64}個",
+                "鋼鉄ケーシング": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "エネルギータブレット": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "錫インゴット": f"{quantity*4}個",
+                "レッドストーンダスト": f"{quantity*3}個",
+                "鋼鉄ケーシング": f"{quantity}個",
+                "エネルギータブレット": f"{quantity}個"
+            }
+    if name == "栄養液化機":
+        if quantity*4 >= 64:
+            return {
+                "レッドストーンダスト": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "基本制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "ボウル": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "鋼鉄ケーシング": f"{quantity/64}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "レッドストーンダスト": f"{quantity*4}個",
+                "基本制御回路": f"{quantity*2}個",
+                "ボウル": f"{quantity*2}個",
+                "鋼鉄ケーシング": f"{quantity}個"
+            }
+    if name == "電動ポンプ":
+        if quantity*3 >= 64:
+            return {
+                "オスミウムインゴット": f"{int(quantity*3/64)}スタックと{quantity*3%64}個",
+                "吹込合金": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "バケツ": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "鋼鉄ケーシング": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "オスミウムインゴット": f"{quantity*3}個",
+                "吹込合金": f"{quantity*2}個",
+                "バケツ": f"{quantity}個",
+                "鋼鉄ケーシング": f"{quantity}個"
+            }
+    if name == "流体再供給機":
+        if quantity*6 >= 64:
+            return {
+                "錫インゴット": f"{int(quantity*6/64)}スタックと{quantity*6%64}個",
+                "基本制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "鋼鉄ケーシング": f"{int(quantity)}スタックと{quantity}個"
+            }
+        else:
+            return {
+                "錫インゴット": f"{quantity*6}個",
+                "基本制御回路": f"{quantity*2}個",
+                "鋼鉄ケーシング" : f"{quantity}個"
+            }
     else:
         return "有効な値を入力してください"
 
