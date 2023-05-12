@@ -1469,6 +1469,53 @@ def Calc(name, quantity):
                 "金インゴット": f"{quantity*2}個",
                 "浄化室": f"{quantity}個"
             }
+    if name == "化学溶解機":
+        if quantity*4 >= 64:
+            return {
+                "精製黒曜石インゴット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "究極制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "化学タンク(種類不問)": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "鋼鉄ケーシング": f"{int(quantity)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "精製黒曜石インゴット": f"{quantity*4}個",
+                "究極制御回路": f"{quantity*2}個",
+                "化学タンク(種類不問)": f"{quantity*2}個",
+                "鋼鉄ケーシング": f"{quantity}個"
+            }
+    if name == "化学洗浄機":
+        if quantity*4 >= 64:
+            return {
+                "精製黒曜石インゴット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "究極制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "流体タンク(種類不問)": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "化学タンク(種類不問)": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "鋼鉄ケーシング": f"{int(quantity)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "精製黒曜石インゴット": f"{quantity*4}個",
+                "究極制御回路": f"{quantity*2}個",
+                "流体タンク(種類不問)": f"{quantity}個",
+                "化学タンク(種類不問)": f"{quantity}個",
+                "鋼鉄ケーシング": f"{quantity}個"
+            }
+    if name == "化学結晶化装置":
+        if quantity*4 >= 64:
+            return {
+                "精製黒曜石インゴット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "究極制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "蛍石": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "鋼鉄ケーシング": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "精製黒曜石インゴット": f"{quantity*4}個",
+                "究極制御回路": f"{quantity*2}個",
+                "蛍石": f"{quantity*2}個",
+                "鋼鉄ケーシング": f"{quantity}個"
+            }
     else:
         return "有効な値を入力してください"
 
