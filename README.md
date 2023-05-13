@@ -21,4 +21,5 @@
  "材料3": "個数",
  ...}
 ```
-
+### その他質問やバグ報告など
+[コントリビュート](https://github.com/hihimamuLab/MekanismCalcLibrary/blob/main/CONTRIBUTING.md)
