@@ -50,7 +50,30 @@ root(MekanismCalcLibrary)以下にファイルおよびフォルダを配置し�
 
 ```
 MekanismCalcLibrary
-  ┣
-  ┣
+  ┣.github/
+  ┃    ┃
+  ┃    ┣ISSUE_TEMPLATE/
+  ┃    ┃    ┣issues_bug.md 
+  ┃    ┃    ┣issues_feature.md
+  ┃    ┃    ┣issues_improvement.md
+  ┃    ┃    ┣issues_other.md
+  ┃    ┃    ┗issues_questiong.md
+  ┃    ┃
+  ┃    ┗workflows/
+  ┃　　　    ┗pypi_release.yml
+  ┃
+  ┣mekanismPy/
+  ┃    ┣__init__.py
+  ┃    ┣calc.py
+  ┃    ┣item_lib.py
+  ┃    ┗mb_materials.py
+  ┃
+  ┣.gitignore
+  ┣CODE_OF_CONDUCT.md
+  ┣CONTRIBUTING.md
+  ┣LICENSE
+  ┣README.md
+  ┣README.rst
+  ┗setup.py
 ```
 
