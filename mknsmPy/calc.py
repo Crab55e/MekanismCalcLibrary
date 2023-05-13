@@ -1728,6 +1728,545 @@ def Calc(name, quantity):
                 "反物質ペレット": f"{quantity*2}個",
                 "鋼鉄ケーシング": f"{quantity}個"
             }
+    if name == "基本吹込ファクトリー":
+        if quantity*4 >= 64:
+            return {
+                "レッドストーンダスト": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "基本制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "鉄インゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "冶金吹込み機": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "レッドストーンダスト": f"{quantity*4}個",
+                "基本制御回路": f"{quantity*2}個",
+                "鉄インゴット": f"{quantity*2}個",
+                "冶金吹込み機": f"{quantity}個"
+            }
+    if name == "基本精錬ファクトリー":
+        if quantity*4 >= 64:
+            return {
+                "レッドストーンダスト": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "基本制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "鉄インゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "電動精錬機": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "レッドストーンダスト": f"{quantity*4}個",
+                "基本制御回路": f"{quantity*2}個",
+                "鉄インゴット": f"{quantity*2}個",
+                "電動精錬機": f"{quantity}個"
+            }
+    if name == "基本濃縮ファクトリー":
+        if quantity*4 >= 64:
+            return {
+                "レッドストーンダスト": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "基本制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "鉄インゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "濃縮室": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "レッドストーンダスト": f"{quantity*4}個",
+                "基本制御回路": f"{quantity*2}個",
+                "鉄インゴット": f"{quantity*2}個",
+                "濃縮室": f"{quantity}個"
+            }
+    if name == "基本粉砕ファクトリー":
+        if quantity*4 >= 64:
+            return {
+                "レッドストーンダスト": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "基本制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "鉄インゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "粉砕機": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "レッドストーンダスト": f"{quantity*4}個",
+                "基本制御回路": f"{quantity*2}個",
+                "鉄インゴット": f"{quantity*2}個",
+                "粉砕機": f"{quantity}個"
+            }
+    if name == "基本圧縮ファクトリー":
+        if quantity*4 >= 64:
+            return {
+                "レッドストーンダスト": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "基本制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "鉄インゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "オスミウム圧縮機": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "レッドストーンダスト": f"{quantity*4}個",
+                "基本制御回路": f"{quantity*2}個",
+                "鉄インゴット": f"{quantity*2}個",
+                "オスミウム圧縮機": f"{quantity}個"
+            }
+    if name == "基本結合ファクトリー":
+        if quantity*4 >= 64:
+            return {
+                "レッドストーンダスト": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "基本制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "鉄インゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "結合機": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "レッドストーンダスト": f"{quantity*4}個",
+                "基本制御回路": f"{quantity*2}個",
+                "鉄インゴット": f"{quantity*2}個",
+                "結合機": f"{quantity}個"
+            }
+    if name == "基本浄化ファクトリー":
+        if quantity*4 >= 64:
+            return {
+                "レッドストーンダスト": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "基本制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "鉄インゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "浄化室": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "レッドストーンダスト": f"{quantity*4}個",
+                "基本制御回路": f"{quantity*2}個",
+                "鉄インゴット": f"{quantity*2}個",
+                "浄化室": f"{quantity}個"
+            }
+    if name == "基本注入ファクトリー":
+        if quantity*4 >= 64:
+            return {
+                "レッドストーンダスト": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "基本制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "鉄インゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "化学注入室": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "レッドストーンダスト": f"{quantity*4}個",
+                "基本制御回路": f"{quantity*2}個",
+                "鉄インゴット": f"{quantity*2}個",
+                "化学注入室": f"{quantity}個"
+            }
+    if name == "基本製材ファクトリー":
+        if quantity*4 >= 64:
+            return {
+                "レッドストーンダスト": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "基本制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "鉄インゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "精密製材機": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "レッドストーンダスト": f"{quantity*4}個",
+                "基本制御回路": f"{quantity*2}個",
+                "鉄インゴット": f"{quantity*2}個",
+                "精密製材機": f"{quantity}個"
+            }
+    if name == "発展吹込ファクトリー":
+        if quantity*4 >= 64:
+            return {
+                "吹込合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "発展制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "オスミウムインゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "基本吹込ファクトリー": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "吹込合金": f"{quantity*4}個",
+                "発展制御回路": f"{quantity*2}個",
+                "オスミウムインゴット": f"{quantity*2}個",
+                "基本吹込ファクトリー": f"{quantity}個"
+            }
+    if name == "発展精錬ファクトリー":
+        if quantity*4 >= 64:
+            return {
+                "吹込合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "発展制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "オスミウムインゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "基本精錬ファクトリー": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "吹込合金": f"{quantity*4}個",
+                "発展制御回路": f"{quantity*2}個",
+                "オスミウムインゴット": f"{quantity*2}個",
+                "基本精錬ファクトリー": f"{quantity}個"
+            }
+    if name == "発展濃縮ファクトリー":
+        if quantity*4 >= 64:
+            return {
+                "吹込合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "発展制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "オスミウムインゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "基本濃縮ファクトリー": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "吹込合金": f"{quantity*4}個",
+                "発展制御回路": f"{quantity*2}個",
+                "オスミウムインゴット": f"{quantity*2}個",
+                "基本濃縮ファクトリー": f"{quantity}個"
+            }
+    if name == "発展粉砕ファクトリー":
+        if quantity*4 >= 64:
+            return {
+                "吹込合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "発展制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "オスミウムインゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "基本粉砕ファクトリー": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "吹込合金": f"{quantity*4}個",
+                "発展制御回路": f"{quantity*2}個",
+                "オスミウムインゴット": f"{quantity*2}個",
+                "基本粉砕ファクトリー": f"{quantity}個"
+            }
+    if name == "発展圧縮ファクトリー":
+        if quantity*4 >= 64:
+            return {
+                "吹込合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "発展制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "オスミウムインゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "基本圧縮ファクトリー": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "吹込合金": f"{quantity*4}個",
+                "発展制御回路": f"{quantity*2}個",
+                "オスミウムインゴット": f"{quantity*2}個",
+                "基本圧縮ファクトリー": f"{quantity}個"
+            }
+    if name == "発展結合ファクトリー":
+        if quantity*4 >= 64:
+            return {
+                "吹込合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "発展制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "オスミウムインゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "基本結合ファクトリー": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "吹込合金": f"{quantity*4}個",
+                "発展制御回路": f"{quantity*2}個",
+                "オスミウムインゴット": f"{quantity*2}個",
+                "基本結合ファクトリー": f"{quantity}個"
+            }
+    if name == "発展浄化ファクトリー":
+        if quantity*4 >= 64:
+            return {
+                "吹込合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "発展制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "オスミウムインゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "基本浄化ファクトリー": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "吹込合金": f"{quantity*4}個",
+                "発展制御回路": f"{quantity*2}個",
+                "オスミウムインゴット": f"{quantity*2}個",
+                "基本浄化ファクトリー": f"{quantity}個"
+            }
+    if name == "発展注入ファクトリー":
+        if quantity*4 >= 64:
+            return {
+                "吹込合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "発展制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "オスミウムインゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "基本注入ファクトリー": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "吹込合金": f"{quantity*4}個",
+                "発展制御回路": f"{quantity*2}個",
+                "オスミウムインゴット": f"{quantity*2}個",
+                "基本注入ファクトリー": f"{quantity}個"
+            }
+    if name == "発展製材ファクトリー":
+        if quantity*4 >= 64:
+            return {
+                "吹込合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "発展制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "オスミウムインゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "基本製材ファクトリー": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "吹込合金": f"{quantity*4}個",
+                "発展制御回路": f"{quantity*2}個",
+                "オスミウムインゴット": f"{quantity*2}個",
+                "基本製材ファクトリー": f"{quantity}個"
+            }
+    if name == "精鋭吹込ファクトリー":
+        if quantity*4 >= 64:
+            return {
+                "強化合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "精鋭制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "金インゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "発展吹込ファクトリー": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "強化合金": f"{quantity*4}個",
+                "精鋭制御回路": f"{quantity*2}個",
+                "金インゴット": f"{quantity*2}個",
+                "発展吹込ファクトリー": f"{quantity}個"
+            }
+    if name == "精鋭精錬ファクトリー":
+        if quantity*4 >= 64:
+            return {
+                "強化合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "精鋭制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "金インゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "発展精錬ファクトリー": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "強化合金": f"{quantity*4}個",
+                "精鋭制御回路": f"{quantity*2}個",
+                "金インゴット": f"{quantity*2}個",
+                "発展精錬ファクトリー": f"{quantity}個"
+            }
+    if name == "精鋭濃縮ファクトリー":
+        if quantity*4 >= 64:
+            return {
+                "強化合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "精鋭制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "金インゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "発展濃縮ファクトリー": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "強化合金": f"{quantity*4}個",
+                "精鋭制御回路": f"{quantity*2}個",
+                "金インゴット": f"{quantity*2}個",
+                "発展濃縮ファクトリー": f"{quantity}個"
+            }
+    if name == "精鋭粉砕ファクトリー":
+        if quantity*4 >= 64:
+            return {
+                "強化合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "精鋭制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "金インゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "発展粉砕ファクトリー": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "強化合金": f"{quantity*4}個",
+                "精鋭制御回路": f"{quantity*2}個",
+                "金インゴット": f"{quantity*2}個",
+                "発展粉砕ファクトリー": f"{quantity}個"
+            }
+    if name == "精鋭圧縮ファクトリー":
+        if quantity*4 >= 64:
+            return {
+                "強化合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "精鋭制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "金インゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "発展圧縮ファクトリー": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "強化合金": f"{quantity*4}個",
+                "精鋭制御回路": f"{quantity*2}個",
+                "金インゴット": f"{quantity*2}個",
+                "発展圧縮ファクトリー": f"{quantity}個"
+            }
+    if name == "精鋭結合ファクトリー":
+        if quantity*4 >= 64:
+            return {
+                "強化合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "精鋭制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "金インゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "発展結合ファクトリー": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "強化合金": f"{quantity*4}個",
+                "精鋭制御回路": f"{quantity*2}個",
+                "金インゴット": f"{quantity*2}個",
+                "発展結合ファクトリー": f"{quantity}個"
+            }
+    if name == "精鋭浄化ファクトリー":
+        if quantity*4 >= 64:
+            return {
+                "強化合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "精鋭制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "金インゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "発展浄化ファクトリー": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "強化合金": f"{quantity*4}個",
+                "精鋭制御回路": f"{quantity*2}個",
+                "金インゴット": f"{quantity*2}個",
+                "発展浄化ファクトリー": f"{quantity}個"
+            }
+    if name == "精鋭注入ファクトリー":
+        if quantity*4 >= 64:
+            return {
+                "強化合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "精鋭制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "金インゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "発展注入ファクトリー": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "強化合金": f"{quantity*4}個",
+                "精鋭制御回路": f"{quantity*2}個",
+                "金インゴット": f"{quantity*2}個",
+                "発展注入ファクトリー": f"{quantity}個"
+            }
+    if name == "精鋭製材ファクトリー":
+        if quantity*4 >= 64:
+            return {
+                "強化合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "精鋭制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "金インゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "発展製材ファクトリー": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "強化合金": f"{quantity*4}個",
+                "精鋭制御回路": f"{quantity*2}個",
+                "金インゴット": f"{quantity*2}個",
+                "発展製材ファクトリー": f"{quantity}個"
+            }
+    if name == "究極吹込ファクトリー":
+        if quantity*4 >= 64:
+            return {
+                "原子合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "究極制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "ダイヤモンド": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "精鋭吹込ファクトリー": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "原子合金": f"{quantity*4}個",
+                "究極制御回路": f"{quantity*2}個",
+                "ダイヤモンド": f"{quantity*2}個",
+                "精鋭吹込ファクトリー": f"{quantity}個"
+            }
+    if name == "究極精錬ファクトリー":
+        if quantity*4 >= 64:
+            return {
+                "原子合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "究極制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "ダイヤモンド": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "精鋭精錬ファクトリー": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "原子合金": f"{quantity*4}個",
+                "究極制御回路": f"{quantity*2}個",
+                "ダイヤモンド": f"{quantity*2}個",
+                "精鋭精錬ファクトリー": f"{quantity}個"
+            }
+    if name == "究極濃縮ファクトリー":
+        if quantity*4 >= 64:
+            return {
+                "原子合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "究極制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "ダイヤモンド": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "精鋭濃縮ファクトリー": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "原子合金": f"{quantity*4}個",
+                "究極制御回路": f"{quantity*2}個",
+                "ダイヤモンド": f"{quantity*2}個",
+                "精鋭濃縮ファクトリー": f"{quantity}個"
+            }
+    if name == "究極粉砕ファクトリー":
+        if quantity*4 >= 64:
+            return {
+                "原子合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "究極制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "ダイヤモンド": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "精鋭粉砕ファクトリー": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "原子合金": f"{quantity*4}個",
+                "究極制御回路": f"{quantity*2}個",
+                "ダイヤモンド": f"{quantity*2}個",
+                "精鋭粉砕ファクトリー": f"{quantity}個"
+            }
+    if name == "究極圧縮ファクトリー":
+        if quantity*4 >= 64:
+            return {
+                "原子合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "究極制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "ダイヤモンド": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "精鋭圧縮ファクトリー": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "原子合金": f"{quantity*4}個",
+                "究極制御回路": f"{quantity*2}個",
+                "ダイヤモンド": f"{quantity*2}個",
+                "精鋭圧縮ファクトリー": f"{quantity}個"
+            }
+    if name == "究極結合ファクトリー":
+        if quantity*4 >= 64:
+            return {
+                "原子合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "究極制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "ダイヤモンド": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "精鋭結合ファクトリー": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "原子合金": f"{quantity*4}個",
+                "究極制御回路": f"{quantity*2}個",
+                "ダイヤモンド": f"{quantity*2}個",
+                "精鋭結合ファクトリー": f"{quantity}個"
+            }
+    if name == "究極浄化ファクトリー":
+        if quantity*4 >= 64:
+            return {
+                "原子合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "究極制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "ダイヤモンド": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "精鋭浄化ファクトリー": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "原子合金": f"{quantity*4}個",
+                "究極制御回路": f"{quantity*2}個",
+                "ダイヤモンド": f"{quantity*2}個",
+                "精鋭浄化ファクトリー": f"{quantity}個"
+            }
+    if name == "究極注入ファクトリー":
+        if quantity*4 >= 64:
+            return {
+                "原子合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "究極制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "ダイヤモンド": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "精鋭注入ファクトリー": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "原子合金": f"{quantity*4}個",
+                "究極制御回路": f"{quantity*2}個",
+                "ダイヤモンド": f"{quantity*2}個",
+                "精鋭注入ファクトリー": f"{quantity}個"
+            }
+    if name == "究極製材ファクトリー":
+        if quantity*4 >= 64:
+            return {
+                "原子合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "究極制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "ダイヤモンド": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "精鋭製材ファクトリー": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "原子合金": f"{quantity*4}個",
+                "究極制御回路": f"{quantity*2}個",
+                "ダイヤモンド": f"{quantity*2}個",
+                "精鋭製材ファクトリー": f"{quantity}個"
+            }
     else:
         return "有効な値を入力してください"
-
