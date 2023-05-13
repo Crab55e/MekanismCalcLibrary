@@ -1593,6 +1593,141 @@ def Calc(name, quantity):
                 "基本制御回路": f"{quantity*2}個",
                 "鋼鉄ケーシング" : f"{quantity}個"
             }
+    if name == "弾性波発振装置":
+        if quantity*5 >= 64:
+            return {
+                "錫インゴット": f"{int(quantity*5/64)}スタックと{quantity*5%64}個",
+                "基本制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "ラピスラズリ": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "鋼鉄ケーシング": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "錫インゴット": f"{quantity*5}個",
+                "基本制御回路": f"{quantity*2}個",
+                "ラピスラズリ": f"{quantity}個",
+                "鋼鉄ケーシング": f"{quantity}個"
+            }
+    if name == "レーザー":
+        if quantity*3 >= 64:
+            return {
+                "強化合金": f"{int(quantity*3/64)}スタックと{quantity*3%64}個",
+                "エネルギータブレット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "ダイヤモンド": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "鋼鉄ケーシング": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "強化合金": f"{quantity*3}個",
+                "エネルギータブレット": f"{quantity*2}個",
+                "ダイヤモンド": f"{quantity}個",
+                "鋼鉄ケーシング": f"{quantity}個"
+            }
+    if name == "レーザー増幅器":
+        if quantity*7 >= 64:
+            return {
+                "鋼鉄ケーシング": f"{int(quantity*7/64)}スタックと{quantity*7%64}個",
+                "ダイヤモンド": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "基本エネルギーキューブ": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "鋼鉄ケーシング": f"{quantity*7}個",
+                "ダイヤモンド": f"{quantity}個",
+                "基本エネルギーキューブ": f"{quantity}個"
+            }
+    if name == "レーザートラクタービーム":
+        if quantity >= 64:
+            return {
+                "レーザー増幅器": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "パーソナルチェスト": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "レーザー増幅器": f"{quantity}個",
+                "パーソナルチェスト": f"{quantity}個"
+            }
+    if name == "デジタルマイナー":
+        if quantity*2 >= 64:
+            return {
+                "原子合金": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "物流ソーター": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "テレポーテーションコア": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "基本制御回路": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "ロビット": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "鋼鉄ケーシング": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "原子合金": f"{quantity*2}個",
+                "物流ソーター": f"{quantity*2}個",
+                "テレポーテーションコア": f"{quantity*2}個",
+                "基本制御回路": f"{quantity}個",
+                "ロビット": f"{quantity}個",
+                "鋼鉄ケーシング": f"{quantity}個"
+            }
+    if name == "鉱石統合器":
+        if quantity*4 >= 64:
+            return {
+                "鋼鉄インゴット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "基本制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "板ガラス": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "チェスト": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "鉱石辞書": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "鋼鉄ケーシング": f"{quantity*4}個",
+                "基本制御回路": f"{quantity*2}個",
+                "板ガラス": f"{quantity}個",
+                "チェスト": f"{quantity}個",
+                "鉱石辞書": f"{quantity}個"
+            }
+    if name == "太陽中性子反応機":
+        if quantity*3 >= 64:
+            return {
+                "青銅インゴット": f"{int(quantity*3/64)}スタックと{quantity*3%64}個",
+                "強化合金": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "精鋭制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "HDPEシート": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "鋼鉄ケーシング": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "青銅インゴット": f"{quantity*3}個",
+                "強化合金": f"{quantity*2}個",
+                "精鋭制御回路": f"{quantity*2}個",
+                "HDPEシート": f"{quantity}個",
+                "鋼鉄ケーシング": f"{quantity}個"
+            }
+    if name == "同位体遠心分離機":
+        if quantity*6 >= 64:
+            return {
+                "鉛インゴット": f"{int(quantity*6/64)}スタックと{quantity*6%64}個",
+                "究極制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "基本化学タンク": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "鉛インゴット": f"{quantity*6}個",
+                "究極制御回路": f"{quantity*2}個",
+                "基本化学タンク": f"{quantity}個"
+            }
+    if name == "反陽子核合成機":
+        if quantity*4 >= 64:
+            return {
+                "原子合金": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "究極制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "反物質ペレット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "鋼鉄ケーシング": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "原子合金": f"{quantity*4}個",
+                "究極制御回路": f"{quantity*2}個",
+                "反物質ペレット": f"{quantity*2}個",
+                "鋼鉄ケーシング": f"{quantity}個"
+            }
     else:
         return "有効な値を入力してください"
 
