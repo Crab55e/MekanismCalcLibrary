@@ -28,12 +28,6 @@ Pull Requestはいつでも歓迎しています。
 - サンプルコードやスペルの修正
 - 別の説明方法の提案や修正
 - 文章をわかりやすくするように改善
-- ウェブサイトの改善
-- テストの改善
-
-:memo: **Note:** Pull Requestを受け入れるとあなたの貢献が[Contributorsリスト](https://github.com/asciidwango/js-primer/graphs/contributors)に追加されます。
-また、Pull Requestを送った内容はこの書籍の[ライセンス](./LICENSE)（MIT and CC BY-NC）が適応されます。
-これは、あなたの貢献がこの書籍への努力的な寄付となることを意味しています。
 
 **受け入れていないPull Request**
 
