@@ -787,7 +787,7 @@ def Calc(name, quantity):
     if name == "重力変調ユニット":
         if quantity*3 >= 64:
             return {
-                "反物質ペレット": f"{int(quantity*3/64)スタックと{quantity*3%64}}個",
+                "反物質ペレット": f"{int(quantity*3/64)}スタックと{quantity*3%64}個",
                 "原子合金": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
                 "究極インダクションプロバイダ": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
                 "ネザースター": f"{int(quantity/64)}スタックと{quantity%64}個",
@@ -1310,7 +1310,7 @@ def Calc(name, quantity):
             return {
                 "レッドストーンダスト": f"{quantity*4}個",
                 "マグマ入りバケツ": f"{quantity*2}個",
-                "基本制御回路": f"{quantity*2)個",
+                "基本制御回路": f"{quantity*2}個",
                 "鋼鉄ケーシング": f"{quantity}個"
             }
     if name == "精密製材機":
