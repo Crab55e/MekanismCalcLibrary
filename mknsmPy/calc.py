@@ -2406,6 +2406,63 @@ def Calc(name, quantity):
                 "究極制御回路": f"{quantity*2}個",
                 "木材": f"{quantity}個"
             }
+    if name == "テレポーター":
+        if quantity*4 >= 64:
+            return {
+                "基本制御回路": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "鋼鉄ケーシング": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "テレポーテーションコア": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "基本制御回路": f"{quantity*4}個",
+                "鋼鉄ケーシング": f"{quantity*4}個",
+                "テレポーテーションコア": f"{quantity}個"
+            }
+    if name == "テレポーターフレーム":
+        if quantity*8 >= 64:
+            return {
+                "精製黒曜石インゴット": f"{int(quantity*8/64)}スタックと{quantity*8%64}個",
+                "精製グロウストーンインゴット": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "精製黒曜石インゴット": f"{quantity*8}個",
+                "精製グロウストーンインゴット": f"{quantity}個"
+            }
+    if name == "構造用ガラス":
+        if quantity*4 >= 64:
+            return {
+                "鋼鉄インゴット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "ガラス": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "構造用ガラス": f"{quantity*4}個",
+                "ガラス": f"{quantity}個"
+            }
+    if name == "ダイナミックタンク":
+        if quantity*4 >= 64:
+            return {
+                "鋼鉄インゴット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "バケツ": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "鋼鉄インゴット": f"{quantity*4}個",
+                "バケツ": f"{quantity}個"
+            }
+    if name == "ダイナミックバルブ":
+        if quantity*4 >= 64:
+            return {
+                "ダイナミックタンク": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "基本制御回路": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "ダイナミックタンク": f"{quantity*4}個",
+                "基本制御回路": f"{quantity}個"
+            }
     else:
         return "有効な値を入力してください"
 
