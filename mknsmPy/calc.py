@@ -2270,3 +2270,4 @@ def Calc(name, quantity):
             }
     else:
         return "有効な値を入力してください"
+
