@@ -3078,6 +3078,43 @@ def Calc(name, quantity):
                 "精鋭熱力学的コンダクター": f"{quantity*8}個",
                 "原子合金": f"{quantity}個"
             }
+    if name == "制限トランスポーター":
+        if quantity*2 >= 64:
+            return {
+                "鋼鉄インゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "鉄格子": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "鋼鉄インゴット": f"{quantity*2}個",
+                "鉄格子": f"{quantity}個"
+            }
+    if name == "迂回トランスポーター":
+        if quantity*6 >= 64:
+            return {
+                "レッドストーンダスト": f"{int(quantity*6/64)}スタックと{quantity*6%64}個",
+                "鋼鉄インゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "鉄格子": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "レッドストーンダスト": f"{quantity*6}個",
+                "鋼鉄インゴット": f"{quantity*2}個",
+                "鉄格子": f"{quantity}個"
+            }
+    if name == "物流ソーター":
+        if quantity*7 >= 64:
+            return {
+                "鉄インゴット": f"{int(quantity*7/64)}スタックと{quantity*7%64}個",
+                "ピストン": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "基本制御回路": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "鉄インゴット": f"{quantity*7}個",
+                "ピストン": f"{quantity}個",
+                "基本制御回路": f"{quantity}個"
+                }
     else:
         return "有効な値を入力してください"
 
