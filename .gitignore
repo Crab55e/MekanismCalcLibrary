@@ -2,4 +2,3 @@ MANIFEST.in
 dist/
 build/
 mknsmPy.egg-info/
-
