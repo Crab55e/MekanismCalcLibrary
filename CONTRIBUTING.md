@@ -6,12 +6,12 @@
 
 次のIssueを受け付けています。
 
-- ツールに対する質問 => [こちらから質問できます](https://github.com/hihimamuLab/MekanismCalcLibrary/issues/new?template=issues_question.md)
-- ツールのエラーやバグの報告 => [こちらからバグ報告できます](https://github.com/hihimamuLab/MekanismCalcLibrary/issues/new?template=issues_bug.md)
-- ツールの改善を提案 => [こちらから提案できます](https://github.com/hihimamuLab/MekanismCalcLibrary/issues/new?template=issues_improvement.md)
-- 新しいトピックなどの提案 => [こちらから提案できます](https://github.com/hihimamuLab/MekanismCalcLibrary/issues/new?template=issues_feature.md)
+- ツールに対する質問 => [こちらから質問できます](https://github.com/hihimamuLab/MekanismCalcLibrary/issues/new?template=question.md)
+- ツールのエラーやバグの報告 => [こちらからバグ報告できます](https://github.com/hihimamuLab/MekanismCalcLibrary/issues/new?template=bug.md)
+- ツールの改善を提案 => [こちらから提案できます](https://github.com/hihimamuLab/MekanismCalcLibrary/issues/new?template=improvement.md)
+- 新しいトピックなどの提案 => [こちらから提案できます](https://github.com/hihimamuLab/MekanismCalcLibrary/issues/new?template=feature.md)
 
-[その他のIssue](https://github.com/hihimamuLab/MekanismCalcLibrary/issues/new?template=issues_other.md)も歓迎しています。
+[その他のIssue](https://github.com/hihimamuLab/MekanismCalcLibrary/issues/new?template=other.md)も歓迎しています。
 
 ## Pull Request
 
