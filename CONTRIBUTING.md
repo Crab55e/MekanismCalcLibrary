@@ -31,7 +31,7 @@ Pull Requestはいつでも歓迎しています。
 
 **受け入れていないPull Request**
 
-- [CODE OF CONDUCT](./CODE_OF_CONDUCT.md)に反する内容を含むもの
+- [CODE OF CONDUCT](./.github/CODE_OF_CONDUCT.md)に反する内容を含むもの
 
 ## 修正の送り方
 
