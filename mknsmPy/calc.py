@@ -2546,17 +2546,6 @@ def Calc(name, quantity):
                 "発展制御回路": f"{quantity}個"
             }
     if name == "インダクションケーシング":
-        if quantity%4 != 0:
-            if quantity*4 >= 64:
-                return {
-                    "鋼鉄インゴット": f"{int((quantity*4+(4-quantity*4%4))/64)}スタックと{(quantity*4+(4-quantity*4%4))%64}個",
-                    "エネルギータブレット": f"{int((quantity+(4-quantity%4))/64)}スタックと{(quantity+(4-quantity%4))%64}個"
-                }
-            else:
-                return {
-                    "鋼鉄インゴット": f"{quantity*4+(4-quantity*4%4)}個",
-                    "エネルギータブレット": f"{quantity+(4-quantity%4)}個"
-                }
         if quantity*4 >= 64:
             return {
                 "鋼鉄インゴット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
@@ -2568,17 +2557,6 @@ def Calc(name, quantity):
                 "エネルギータブレット": f"{quantity}個"
             }
     if name == "インダクションポート":
-        if quantity%2 != 0:
-            if quantity*4 >= 64:
-                return {
-                    "インダクションケーシング": f"{int((quantity*4+(2-quantity*4%2))/64)}スタックと{(quantity*4+(2-quantity*4%2))%64}個",
-                    "精鋭制御回路": f"{int((quantity+(2-quantity%2))/64)}スタックと{(quantity+(2-quantity%2))%64}個"
-                }
-            else:
-                return {
-                    "インダクションケーシング": f"{quantity*4}個",
-                    "精鋭制御回路": f"{quantity}個"
-                }
         if quantity*4 >= 64:
             return {
                 "インダクションケーシング": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
@@ -2588,6 +2566,352 @@ def Calc(name, quantity):
             return {
                 "インダクションケーシング": f"{quantity*4}個",
                 "精鋭制御回路": f"{quantity}個"
+            }
+    if name == "基本インダクションセル":
+        if quantity*4 >= 64:
+            return {
+                "エネルギータブレット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "リチウムの粉": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "基本エネルギーキューブ": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "エネルギータブレット": f"{quantity*4}個",
+                "リチウムの粉": f"{quantity*4}個",
+                "基本エネルギーキューブ": f"{quantity}個"
+            }
+    if name == "発展インダクションセル":
+        if quantity*4 >= 64:
+            return {
+                "エネルギータブレット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "基本インダクションセル": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "発展エネルギーキューブ": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "エネルギータブレット": f"{quantity*4}個",
+                "基本インダクションセル": f"{quantity*4}個",
+                "発展エネルギーキューブ": f"{quantity}個"
+            }
+    if name == "精鋭インダクションセル":
+        if quantity*4 >= 64:
+            return {
+                "エネルギータブレット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "発展インダクションセル": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "精鋭エネルギーキューブ": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "エネルギータブレット": f"{quantity*4}個",
+                "発展インダクションセル": f"{quantity*4}個",
+                "精鋭エネルギーキューブ": f"{quantity}個"
+            }
+    if name == "究極インダクションセル":
+        if quantity*4 >= 64:
+            return {
+                "エネルギータブレット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "精鋭インダクションセル": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "究極エネルギーキューブ": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "エネルギータブレット": f"{quantity*4}個",
+                "精鋭インダクションセル": f"{quantity*4}個",
+                "究極エネルギーキューブ": f"{quantity}個"
+            }
+    if name == "基本インダクションプロバイダ":
+        if quantity*4 >= 64:
+            return {
+                "基本制御回路": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "リチウムの粉": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "基本エネルギーキューブ": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "基本制御回路": f"{quantity*4}個",
+                "リチウムの粉": f"{quantity*4}個",
+                "基本エネルギーキューブ": f"{quantity}個"
+            }
+    if name == "発展インダクションプロバイダ":
+        if quantity*4 >= 64:
+            return {
+                "発展制御回路": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "基本インダクションプロバイダ": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "発展エネルギーキューブ": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "発展制御回路": f"{quantity*4}個",
+                "基本インダクションプロバイダ": f"{quantity*4}個",
+                "発展エネルギーキューブ": f"{quantity}個"
+            }
+    if name == "精鋭インダクションプロバイダ":
+        if quantity*4 >= 64:
+            return {
+                "精鋭制御回路": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "発展インダクションプロバイダ": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "精鋭エネルギーキューブ": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "精鋭制御回路": f"{quantity*4}個",
+                "発展インダクションプロバイダ": f"{quantity*4}個",
+                "精鋭エネルギーキューブ": f"{quantity}個"
+            }
+    if name == "究極インダクションプロバイダ":
+        if quantity*4 >= 64:
+            return {
+                "究極制御回路": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "精鋭インダクションプロバイダ": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "究極エネルギーキューブ": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "究極制御回路": f"{quantity*4}個",
+                "精鋭インダクションプロバイダ": f"{quantity*4}個",
+                "究極エネルギーキューブ": f"{quantity}個"
+            }
+    if name == "QIOドライブ配列":
+        if quantity*4 >= 64:
+            return {
+                "ポロニウムペレット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "究極制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "板ガラス": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "テレポーテーションコア": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "パーソナルチェスト": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "ポロニウムペレット": f"{quantity*4}個",
+                "究極制御回路": f"{quantity*2}個",
+                "板ガラス": f"{quantity}個",
+                "テレポーテーションコア": f"{quantity}個",
+                "パーソナルチェスト": f"{quantity}個"
+            }
+    if name == "QIOドライブ":
+        if quantity*4 >= 64:
+            return {
+                "究極制御回路": f"{int(quantity*4/64)スタックと{quantity*4%64}個",
+                "鉛インゴット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "ポロニウムペレット": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "究極制御回路": f"{quantity*4}個",
+                "鉛インゴット": f"{quantity*4}個",
+                "ポロニウムペレット": f"{quantity}個"
+            }
+    if name == "超高密集QIOドライブ":
+        if quantity*4 >= 64:
+            return {
+                "QIOドライブ": f"{int(quantity*4/64)スタックと{quantity*4%64}個",
+                "鉛インゴット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "ダイヤモンド": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "QIOドライブ": f"{quantity*4}個",
+                "鉛インゴット": f"{quantity*4}個",
+                "ダイヤモンド": f"{quantity}個"
+            }
+    if name == "時間拡張QIOドライブ":
+        if quantity*4 >= 64:
+            return {
+                "超高密集QIOドライブ": f"{int(quantity*4/64)スタックと{quantity*4%64}個",
+                "鉛インゴット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "エメラルド": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "超高密集QIOドライブ": f"{quantity*4}個",
+                "鉛インゴット": f"{quantity*4}個",
+                "エメラルド": f"{quantity}個"
+            }
+    if name == "超大容量QIOドライブ":
+        if quantity*4 >= 64:
+            return {
+                "時間拡張QIOドライブ": f"{int(quantity*4/64)スタックと{quantity*4%64}個",
+                "鉛インゴット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "反物質ペレット": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "時間拡張QIOドライブ": f"{quantity*4}個",
+                "鉛インゴット": f"{quantity*4}個",
+                "反物質ペレット": f"{quantity}個"
+            }
+    if name == "QIOダッシュボード":
+        if quantity*4 >= 64:
+            return {
+                "鉛インゴット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "ポロニウムペレット": f"{int(quantity*3/64)}スタックと{quantity*3%64}個",
+                "テレポーテーションコア": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "板ガラス": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "鉛インゴット": f"{quantity*4}個",
+                "ポロニウムペレット": f"{quantity*3}個",
+                "テレポーテーションコア": f"{quantity}個",
+                "板ガラス": f"{quantity}個"
+            }
+    if name == "ポータブルQIOドライブ":
+        if quantity*7 >= 64:
+            return {
+                "ポロニウムペレット": f"{int(quantity*7/64)}スタックと{quantity*7%64}個",
+                "テレポーテーションコア": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "QIOダッシュボード": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "ポロニウムペレット": f"{quantity*7}個",
+                "テレポーテーションコア": f"{quantity}個",
+                "QIOダッシュボード": f"{quantity}個"
+            }
+    if name == "QIO搬入機":
+        if quantity*2 >= 64:
+            return {
+                "鉛インゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "ポロニウムペレット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "テレポーテーションコア": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "粘着ピストン": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "究極制御回路": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "鉛インゴット": f"{quantity*2}個",
+                "ポロニウムペレット": f"{quantity*2}個",
+                "テレポーテーションコア": f"{quantity}個",
+                "粘着ピストン": f"{quantity}個",
+                "究極制御回路": f"{quantity}個"
+            }
+     if name == "QIO搬出機":
+        if quantity*2 >= 64:
+            return {
+                "鉛インゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "ポロニウムペレット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "テレポーテーションコア": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "ピストン": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "究極制御回路": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "鉛インゴット": f"{quantity*2}個",
+                "ポロニウムペレット": f"{quantity*2}個",
+                "テレポーテーションコア": f"{quantity}個",
+                "ピストン": f"{quantity}個",
+                "究極制御回路": f"{quantity}個"
+            }
+    if name == "QIOレッドストーンアダプター":
+        if quantity*4 >= 64:
+            return {
+                "ポロニウムペレット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "究極制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "レッドストーントーチ": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "テレポーテーションコア": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "レッドストーンダスト": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "ポロニウムペレット": f"{quantity*4}個",
+                "究極制御回路": f"{quantity*2}個",
+                "レッドストーントーチ": f"{quantity}個",
+                "テレポーテーションコア": f"{quantity}個",
+                "レッドストーンダスト": f"{quantity}個"
+            }
+    if name == "SPS筐体":
+        if quantity*4 >= 64:
+            return {
+                "ポロニウムペレット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "HDPEシート": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "プルトニウムペレット": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "ポロニウムペレット": f"{quantity*4}個",
+                "HDPEシート": f"{quantity*4}個",
+                "プルトニウムペレット": f"{quantity}個"
+            }
+    if name == "SPSポート":
+        if quantity*4 >= 64:
+            return {
+                "SPS筐体": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "究極制御回路": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "SPS筐体": f"{quantity*4}個",
+                "究極制御回路": f"{quantity}個"
+            }
+    if name == "過充電コイル":
+        if quantity*3 >= 64:
+            return {
+                "銅インゴット": f"{int(quantity*3/64)}スタックと{quantity*3%64}個",
+                "ポロニウムペレット": f"{int(quantity*3/64)}スタックと{quantity*3%64}個",
+                "究極制御回路": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "レーザー": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "銅インゴット": f"{quantity*3}個",
+                "ポロニウムペレット": f"{quantity*3}個",
+                "究極制御回路": f"{quantity*2}個",
+                "レーザー": f"{quantity}個"
+            }
+    if name == "基本ユニバーサルケーブル":
+        if quantity*2 >= 64:
+            return {
+                "鋼鉄インゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "レッドストーンダスト": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "鋼鉄インゴット": f"{quantity*2}個",
+                "レッドストーンダスト": f"{quantity}個"
+            }
+    if name == "基本物流トランスポーター":
+        if quantity*2 >= 64:
+            return {
+                "鋼鉄インゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "基本制御回路": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "鋼鉄インゴット": f"{quantity*2}個",
+                "基本制御回路": f"{quantity}個"
+            }
+    if name == "基本メカニカルパイプ":
+        if quantity*2 >= 64:
+            return {
+                "鋼鉄インゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "バケツ": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "鋼鉄インゴット": f"{quantity*2}個",
+                "バケツ": f"{quantity}個"
+            }
+    if name == "基本加圧チューブ":
+        if quantity*2 >= 64:
+            return {
+                "鋼鉄インゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "ガラス": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "鋼鉄インゴット": f"{quantity*2}個",
+                "ガラス": f"{quantity}個"
+            }
+    if name == "基本熱力学的コンダクター":
+        if quantity*2 >= 64:
+            return {
+                "鋼鉄インゴット": f"{int(quantity*2/64)}スタックと{quantity*2%64}個",
+                "銅インゴット": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "鋼鉄インゴット": f"{quantity*2}個",
+                "銅インゴット": f"{quantity}個"
             }
     else:
         return "有効な値を入力してください"
