@@ -2869,6 +2869,39 @@ def Calc(name, quantity):
                 "鋼鉄インゴット": f"{quantity*2}個",
                 "レッドストーンダスト": f"{quantity}個"
             }
+    if name == "発展ユニバーサルケーブル":
+        if quantity*8 >= 64:
+            return {
+                "基本ユニバーサルケーブル": f"{int(quantity*8/64)}スタックと{quantity*8%64}個",
+                "吹込合金": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "基本ユニバーサルケーブル": f"{quantity*8}個",
+                "吹込合金": f"{quantity}個"
+            }
+    if name == "精鋭ユニバーサルケーブル":
+        if quantity*8 >= 64:
+            return {
+                "発展ユニバーサルケーブル": f"{int(quantity*8/64)}スタックと{quantity*8%64}個",
+                "強化合金": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "発展ユニバーサルケーブル": f"{quantity*8}個",
+                "強化合金": f"{quantity}個"
+            }
+    if name == "究極ユニバーサルケーブル":
+        if quantity*8 >= 64:
+            return {
+                "精鋭ユニバーサルケーブル": f"{int(quantity*8/64)}スタックと{quantity*8%64}個",
+                "原子合金": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "精鋭ユニバーサルケーブル": f"{quantity*8}個",
+                "原子合金": f"{quantity}個"
+            }
     if name == "基本物流トランスポーター":
         if quantity*2 >= 64:
             return {
@@ -2879,6 +2912,39 @@ def Calc(name, quantity):
             return {
                 "鋼鉄インゴット": f"{quantity*2}個",
                 "基本制御回路": f"{quantity}個"
+            }
+    if name == "発展物流トランスポーター":
+        if quantity*8 >= 64:
+            return {
+                "吹込合金": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "基本物流トランスポーター": f"{int(quantity*8/64)}スタックと{quantity*8%64}個"
+            }
+        else:
+            return {
+                "吹込合金": f"{quantity}個",
+                "基本物流トランスポーター": f"{quantity*8}個"
+            }
+    if name == "精鋭物流トランスポーター":
+        if quantity*8 >= 64:
+            return {
+                "強化合金": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "発展物流トランスポーター": f"{int(quantity*8/64)}スタックと{quantity*8%64}個"
+            }
+        else:
+            return {
+                "強化合金": f"{quantity}個",
+                "発展物流トランスポーター": f"{quantity*8}個"
+            }
+    if name == "究極物流トランスポーター":
+        if quantity*8 >= 64:
+            return {
+                "原子合金": f"{int(quantity/64)}スタックと{quantity%64}個",
+                "精鋭物流トランスポーター": f"{int(quantity*8/64)}スタックと{quantity*8%64}個"
+            }
+        else:
+            return {
+                "原子合金": f"{quantity}個",
+                "精鋭物流トランスポーター": f"{quantity*8}個"
             }
     if name == "基本メカニカルパイプ":
         if quantity*2 >= 64:
@@ -2891,6 +2957,39 @@ def Calc(name, quantity):
                 "鋼鉄インゴット": f"{quantity*2}個",
                 "バケツ": f"{quantity}個"
             }
+    if name == "発展メカニカルパイプ":
+        if quantity*8 >= 64:
+            return {
+                "基本メカニカルパイプ": f"{int(quantity*8/64)}スタックと{quantity*8%64}個",
+                "吹込合金": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "基本メカニカルパイプ": f"{quantity*8}個",
+                "吹込合金": f"{quantity}個"
+            }
+    if name == "精鋭メカニカルパイプ":
+        if quantity*8 >= 64:
+            return {
+                "発展メカニカルパイプ": f"{int(quantity*8/64)}スタックと{quantity*8%64}個",
+                "強化合金": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "発展メカニカルパイプ": f"{quantity*8}個",
+                "強化合金": f"{quantity}個"
+            }
+    if name == "究極メカニカルパイプ":
+        if quantity*8 >= 64:
+            return {
+                "発展メカニカルパイプ": f"{int(quantity*8/64)}スタックと{quantity*8%64}個",
+                "強化合金": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "発展メカニカルパイプ": f"{quantity*8}個",
+                "強化合金": f"{quantity}個"
+            }
     if name == "基本加圧チューブ":
         if quantity*2 >= 64:
             return {
@@ -2902,6 +3001,39 @@ def Calc(name, quantity):
                 "鋼鉄インゴット": f"{quantity*2}個",
                 "ガラス": f"{quantity}個"
             }
+    if name == "発展加圧チューブ":
+        if quantity*8 >= 64:
+            return {
+                "基本加圧チューブ": f"{int(quantity*8/64)}スタックと{quantity*8%64}個",
+                "吹込合金": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "基本加圧チューブ": f"{quantity*8}個",
+                "吹込合金": f"{quantity}個"
+            }
+    if name == "精鋭加圧チューブ":
+        if quantity*8 >= 64:
+            return {
+                "発展加圧チューブ": f"{int(quantity*8/64)}スタックと{quantity*8%64}個",
+                "強化合金": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "発展加圧チューブ": f"{quantity*8}個",
+                "強化合金": f"{quantity}個"
+            }
+    if name == "究極加圧チューブ":
+        if quantity*8 >= 64:
+            return {
+                "精鋭加圧チューブ": f"{int(quantity*8/64)}スタックと{quantity*8%64}個",
+                "原子合金": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "精鋭加圧チューブ": f"{quantity*8}個",
+                "原子合金": f"{quantity}個"
+            }
     if name == "基本熱力学的コンダクター":
         if quantity*2 >= 64:
             return {
@@ -2912,6 +3044,39 @@ def Calc(name, quantity):
             return {
                 "鋼鉄インゴット": f"{quantity*2}個",
                 "銅インゴット": f"{quantity}個"
+            }
+   if name == "発展熱力学的コンダクター":
+        if quantity*2 >= 64:
+            return {
+                "基本熱力学的コンダクター": f"{int(quantity*8/64)}スタックと{quantity*8%64}個",
+                "吹込合金": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "基本熱力学的コンダクター": f"{quantity*8}個",
+                "吹込合金": f"{quantity}個"
+            }
+    if name == "精鋭熱力学的コンダクター":
+        if quantity*2 >= 64:
+            return {
+                "発展熱力学的コンダクター": f"{int(quantity*8/64)}スタックと{quantity*8%64}個",
+                "原子合金": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "発展熱力学的コンダクター": f"{quantity*8}個",
+                "原子合金": f"{quantity}個"
+            }
+    if name == "究極熱力学的コンダクター":
+        if quantity*2 >= 64:
+            return {
+                "精鋭熱力学的コンダクター": f"{int(quantity*8/64)}スタックと{quantity*8%64}個",
+                "原子合金": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
+        else:
+            return {
+                "精鋭熱力学的コンダクター": f"{quantity*8}個",
+                "原子合金": f"{quantity}個"
             }
     else:
         return "有効な値を入力してください"
