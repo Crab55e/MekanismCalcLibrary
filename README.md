@@ -1,4 +1,4 @@
-# MekanismCalcLiblary
+# MekanismCalcLibary
 
 ![mknsmPy rogo](https://user-images.githubusercontent.com/122292089/236683530-15675752-b36e-428e-9e9f-1a1f292853f0.png)
 
