@@ -623,21 +623,18 @@ def Calc(name, quantity):
                 "ポロニウム": f"{int(quantity)}個"
             }
     if name == "モジュールベース":
-        if quantity%2 == 0:
-            if quantity*4 >= 64:
-                return {
-                    "青銅塊": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
-                    "錫インゴット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
-                    "HDPEシート": f"{int(quantity/64)}スタックと{quantity%64}個"
-                }
-            else:
-                return {
-                    "青銅塊": f"{quantity*4}個",
-                    "錫インゴット": f"{quantity*4}個",
-                    "HDPEシート": f"{quantity}個"
-                }
+        if quantity*4 >= 64:
+            return {
+                "青銅塊": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "錫インゴット": f"{int(quantity*4/64)}スタックと{quantity*4%64}個",
+                "HDPEシート": f"{int(quantity/64)}スタックと{quantity%64}個"
+            }
         else:
-            return "有効な値を入力してください(2n個)"
+            return {
+                "青銅塊": f"{quantity*4}個",
+                "錫インゴット": f"{quantity*4}個",
+                "HDPEシート": f"{quantity}個"
+            }
     if name == "栄養駐車ユニット":
         if quantity*4 >= 64:
             return {
