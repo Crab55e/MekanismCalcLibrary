@@ -7,8 +7,6 @@ class Lib:
         "p", "q", "r", "s", "t", 
         "u", "v", "w", "x", "y", "z", 
     ]
-    
-    return lib
     def __init__(self,lib=lib):
         
         self.lib = lib
