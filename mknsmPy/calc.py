@@ -3247,5 +3247,5 @@ def Calc(name, quantity):
                 "発展制御回路": f"{quantity}個"
             }
     else:
-        return "有効な値を入力してください"
+        raise Exception("有効な値を入力してください")
 
