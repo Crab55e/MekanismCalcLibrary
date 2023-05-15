@@ -1,7 +1,10 @@
-MekanismCalcLiblary
+MekanismCalcLibrary
 ===================
 
-.. figure:: https://user-images.githubusercontent.com/122292089/236683530-15675752-b36e-428e-9e9f-1a1f292853f0.png  
+.. figure:: https://user-images.githubusercontent.com/122292089/236683530-15675752-b36e-428e-9e9f-1a1f292853f0.png
+   :alt: mknsmPy rogo
+
+   mknsmPy rogo
 
 mekanismの材料計算をもっと簡単に
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -23,7 +26,12 @@ mekanismの材料計算をもっと簡単に
     "材料3": "個数",
     ...}
 
+その他質問やバグ報告など
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+`コントリビュート <https://github.com/hihimamuLab/MekanismCalcLibrary/blob/main/CONTRIBUTING.md>`__
+
 .. |MIT License| image:: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
    :target: https://github.com/hihimamuLab/MekanismCalcLibrary/blob/main/LICENSE
 .. |PyPI version| image:: https://badge.fury.io/py/mknsmPy.svg
-   :target: https://badge.fury.io/py/mknsmPy
+   :target: https://pypi.org/project/mknsmPy/
